@@ -15,7 +15,7 @@ export default class contact extends Component {
 
     handle_change = (event)=> this.setState({[event.target.name]: event.target.value})
 
-
+    
 
     handle_submit = (event) => {
         event.preventDefault()
@@ -26,10 +26,18 @@ export default class contact extends Component {
             <div>
                <div>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/>
-                        Lorem Ipsum has been the industry's standard dummy.
+                        Please fill out the form below and let us know how we can best assit you.
                     </p>
                 </div> 
+
+                <div>
+                    <p>
+                        Email us at
+                    </p>
+                    <a href="mailto:info@graphix-ck.com" target="blank">
+                        info@graphix-ck.com
+                    </a>
+                </div>
                
                 <div>
                     <form onSubmit={this.handle_submit}>
