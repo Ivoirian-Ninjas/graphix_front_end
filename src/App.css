@@ -1,3 +1,22 @@
+@font-face{
+  src: url('./fonts/Poppins/Poppins-Regular.ttf');
+  font-family: Poppins;
+  src: url('./fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+  font-family: Titillium;
+}
+@font-face{
+  src: url('./fonts/Robodron_Font/Robodron Bold.otf');
+  font-family: Robodron;
+}
+
+@font-face{
+  src: url('./fonts/Montserrat/Montserrat-Medium.ttf');
+  font-family: Montserrat;
+  src: url('./fonts/Vindemia/Vindemia.ttf');
+  font-family: Vindemia;
+}
+
+
 .App {
   text-align: center;
 }
