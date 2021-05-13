@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import '../css/navbar.css'
 import {menuItems} from './menuItems'
 import $ from 'jquery'
+import logo from '../imgs/graphixLogo.png';
 const Navbar = () => {
 
     function navJs() {
@@ -43,7 +44,8 @@ const Navbar = () => {
         <div>
             <nav>
                 <div className="logo">
-                    <h4>Graphix</h4>
+                    {/* <h4>Graphix</h4> */}
+                    <img src={logo} alt="Logo" className='logoHeader'/>
                 </div>
                 <ul className="nav-links">
                     {menuItems.map((items, index)=>{
@@ -57,6 +59,7 @@ const Navbar = () => {
                     })
 
                     }
+                    <li className='li-nav-start'> <a href='#'>Let's start</a> </li>
                 </ul>
                 <div className="burger" onClick={ function(){setTimeout(function(){ navJs(); });}}>
                     <div className="line1"></div>

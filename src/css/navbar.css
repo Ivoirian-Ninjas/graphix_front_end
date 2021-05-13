@@ -1,6 +1,8 @@
 @font-face{
     src: url('../fonts/Poppins/Poppins-Regular.ttf');
     font-family: Poppins;
+    src: url('../fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+    font-family: Titillium;
 }
 
 * {
@@ -14,36 +16,42 @@ nav {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    background-color: #f1f1f1;
-    font-family: Poppins, sans-serif;
+    background-color: #395fac;
+    font-family: Titillium, sans-serif;
+    z-index: 100;
 }
 
 .logo {
-    color: rgb(133, 2, 115);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    width: 30%;
+    display: flex;
+    text-align: left;
+    /* background-color: aqua; */
+    padding: 0 3vh;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
+    /* background-color: rgb(141, 25, 97); */
+    margin: 1vh 3vh;
+
 }
 
 .nav-links li {
     list-style: none;
+    padding-top: 1vh;
 }
 
 .nav-links a {
-    color: rgb(226, 27, 166);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 17px;
 }
 
 .burger {
@@ -53,11 +61,29 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(141, 25, 97);
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     transition: all 0.3s ease;
 }
-
+.logoHeader{
+    height: 300x;
+    width: 100px;
+}
+.li-nav-start{
+    padding: 1vh 4.5vh;
+    background: rgb(255, 17, 88);
+    color: beige;
+    transition: 0.3s ease-in;
+}
+.li-nav-start:hover{
+    background: rgb(243, 243, 243);
+    border: 1px solid rgb(255, 17, 88);
+    transition: 0.3s ease-in;
+}
+.li-nav-start:hover a{
+    color: rgb(255, 17, 88);
+    transition: 0.3s ease-in;
+}
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
@@ -71,14 +97,14 @@ nav {
     
     .nav-links {
         position: fixed;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #1f1f1f;
+        right: -10%;
+        height: 100vh;
+        top: 0vh;
+        background-color: #181e29f8;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 110%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         justify-content: center;
