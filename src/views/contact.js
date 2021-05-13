@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Select from 'react-select'
+
 
 export default class contact extends Component {
 
@@ -12,9 +14,15 @@ export default class contact extends Component {
         help: ""
 
     }
+     options = [
+        { value: "$0 - $5,000", label: "$0 - $5,000"},
+        { value: "$5,000 - $10,000", label: "$5,000 - $10,000" },
+        { value: "$10,000 - $15,000", label: "$10,000 - $15,000" },
+        { value: "$15,000 +", label: "$15,000 +" }
+      ]
 
     handle_change = (event)=> this.setState({[event.target.name]: event.target.value})
-
+    handle_select = (event) => this.setState({budget: event.value})
     
 
     handle_submit = (event) => {
@@ -58,18 +66,19 @@ export default class contact extends Component {
                                 <label>Phone: *</label>
                                 <input type='tel' name='phone' value={this.state.phone} onChange={this.handle_change}/>
                             </div>
-                           
+                             
 
                         </div>
 
                         <div>
-                            <label>When will you be available for a zoom meeting? (30 minutes) *</label>
-                            {/* Add date selector here */}
-                        </div>
-
-                        <div>
-                            <label>What is your approximate budget? *</label>
-                            {/* Add a drop down menu here */}
+                            <label for="budget-select">What is your approximate budget? *</label>
+                            {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
+                            <Select 
+                                options={this.options} 
+                                onChange={this.handle_select} 
+                                name="budget"
+                                placeholder ="Please choose an option"
+                            />
                         </div>
 
                         <div>
