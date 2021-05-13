@@ -43,10 +43,10 @@ const Navbar = () => {
     return (
         <div>
             <nav>
-                <div className="logo">
+                <a className="logo" href="/">
                     {/* <h4>Graphix</h4> */}
                     <img src={logo} alt="Logo" className='logoHeader'/>
-                </div>
+                </a>
                 <ul className="nav-links">
                     {menuItems.map((items, index)=>{
                         return(
@@ -59,7 +59,7 @@ const Navbar = () => {
                     })
 
                     }
-                    <li className='li-nav-start'> <a href='#'>Let's start</a> </li>
+                    <li className='li-nav-start'> <a href='/contact'>Let's Get Started</a> </li>
                 </ul>
                 <div className="burger" onClick={ function(){setTimeout(function(){ navJs(); });}}>
                     <div className="line1"></div>

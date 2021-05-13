@@ -2,14 +2,16 @@ import React from 'react'
 import '../css/home.css'
 import imageLogo from '../imgs/pexels-cottonbro-4709286.jpg'
 export default function Home() {
+   const  goToContact = () => window.location.href = window.location.origin + "/contact"
+      
     return (
         <div className="homeDiv">
            <div className='divFirstImgs'>
                 <div className='bigTitleHomes'>
                     <p className='companyNameHome'>Graphix</p>
-                    <p className='companySlogan'>Made everything with innovation</p>
+                    <p className='companySlogan'>Affordable Web Services</p>
                     <div className='divBtnHome'>
-                        <button className='btnInnoved'>Let's get innoved</button>
+                        <button onClick={goToContact} className='btnInnoved'>Let's Get Started</button>
                     </div>
                 </div>
                 <div className='blackCover'></div>
