@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Select from 'react-select'
-
-
+import emailjs from 'emailjs-com'
 export default class contact extends Component {
 
     state = {
@@ -9,7 +8,6 @@ export default class contact extends Component {
         lastName: "",
         email: "",
         phone: "",
-        date: "",
         budget: "",
         help: ""
 
@@ -21,13 +19,54 @@ export default class contact extends Component {
         { value: "$15,000 +", label: "$15,000 +" }
       ]
 
+    resetForm = () => {
+        this.setState({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            budget: {value: "", label: ""},
+            help: ""
+
+        })
+
+    }
+
+    
+
+  
+
+   
+
     handle_change = (event)=> this.setState({[event.target.name]: event.target.value})
-    handle_select = (event) => this.setState({budget: event.value})
+    handle_select = (event) => this.setState({budget: {value: event.value,label: event.label}})
     
 
     handle_submit = (event) => {
         event.preventDefault()
+        if(this.validate_form()){
+            emailjs.sendForm('gmail', 'template_keokgzb', event.target, 'user_8ciVfWI2vuQXQWhN3imHh')
+            .then((result) => {
+                this.resetForm()
+            }, (error) => {
+                console.log(error.text);
+            });
+        }else{
+
+            // add toast notification
+        }
+      
+        console.log(this.validate_form())
+
+        this.resetForm()
     }
+
+    validate_form =() => !(this.state.firstName == "" || this.state.lastName == "" || this.state.email == "" || this.state.phone =="" || this.state.budget.value  == "" || this.state.help == "")
+    
+
+
+
+
 
     render() {
         return (
@@ -71,12 +110,13 @@ export default class contact extends Component {
                         </div>
 
                         <div>
-                            <label for="budget-select">What is your approximate budget? *</label>
+                            <label htmlFor="budget-select">What is your approximate budget? *</label>
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
                                 options={this.options} 
                                 onChange={this.handle_select} 
                                 name="budget"
+                                value={this.state.budget}
                                 placeholder ="Please choose an option"
                             />
                         </div>

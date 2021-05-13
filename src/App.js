@@ -1,4 +1,6 @@
 
+
+
 import './App.css';
 
 import Home from './views/home'
@@ -17,6 +19,7 @@ import {
   Route
 } from "react-router-dom";
 
+require('dotenv').config()
 function App() {
   return (
     <Router>
