@@ -19,10 +19,8 @@ export default function Home() {
             <div>
                 <h1> What Can You Expect From Us</h1>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br/>
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>
-                    It has survived not only five centuries, but also the leap into electronic
+                    At Graphix, we pride ourselves to be a customer-centric company; In fact, it is this core value that pushes us to provide our services at an affordable price. <br/>
+                    Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
                 </p>
             </div>
 
@@ -32,10 +30,9 @@ export default function Home() {
                 <div>
                     {/* First value */}
                     <p>
-                        <b>Customer Centric</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br/>
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>
-                        It has survived not only five centuries, but also the leap into electronic
+                        <b>Frugality</b>: Graphix understands the power of accomplishing more with less. <br/>
+                        Knowing that there are no extra points for growing headcount or budget size,<br/>
+                         Graphix focuses on developing solutions that are affordable, secure, and efficient.
                     </p>
                     <div>
                         {/* Add some images. */}
@@ -44,10 +41,10 @@ export default function Home() {
                 <div>
                     {/* Second value */}
                     <p>
-                        <b>Quality</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br/>
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>
-                        It has survived not only five centuries, but also the leap into electronic
+                        <b>Quality</b>: On top of being frugal and transparent with our solutions, <br/>
+                        we also guarantee the quality of our services. <br/>
+                        Hence, because speed matters in business, we always develop and deliver our solutions on time.
+
                     </p>
                     <div>
                         {/* Add some images. */}
@@ -56,10 +53,9 @@ export default function Home() {
                 <div>
                     {/* Third value */}
                     <p>
-                        <b>Affordable</b> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br/>
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>
-                        It has survived not only five centuries, but also the leap into electronic
+                        <b>Think Big</b>: Thinking small is a self-fulfilling prophecy. <br/>
+                        At Graphix, we value businesses with big dreams. <br/>
+                        Thus, we are willing to work with our clients, regardless of their projects’ size.
                     </p>
                     <div>
                         {/* Add some images. */}
@@ -69,11 +65,30 @@ export default function Home() {
             </div>
            
            <div>
+   
                 <a href="/about">
                     Learn More About us
                 </a>
            </div>
+
+           <div>
+               <h1>We Are A Verstile Company</h1>
+               <p>
+                    Graphix provides web and mobile applications for all business sizes. <br/>
+                    Because we understand the benefits of frugality, <br/>
+                    we focus our effort on finding solutions that are affordable, secure, and efficient.
+               </p>
+               <a href="/service">
+                    Learn More
+               </a>
+           </div>
            
+           <div>
+               <h1>Contact Us</h1>
+               <a href="/contact">
+                    Let's Get Started
+               </a>
+           </div>
             
         </div>
     )
