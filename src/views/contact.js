@@ -160,7 +160,7 @@ export default class contact extends Component {
                                     country={'us'}
                                     value={this.state.phone}
                                     onChange={phone => this.setState({phone})}
-                                    className={`${this.state.error_phone && 'error'} `}
+                                    inputClass={`${this.state.error_phone && 'error'} `}
                                     enableSearch={true}
                                     enableLongNumbers={true}
                                     inputProps={{
