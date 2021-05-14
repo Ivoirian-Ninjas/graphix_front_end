@@ -3,7 +3,8 @@ import Select from 'react-select'
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 export default class contact extends Component {
 
@@ -61,6 +62,7 @@ export default class contact extends Component {
     handle_submit = (event) => {
         event.preventDefault()
         if(this.validate_form()){
+           
             emailjs.sendForm('gmail', 'template_keokgzb', event.target, 'user_8ciVfWI2vuQXQWhN3imHh')
             .then((result) => {
                 toast.success('We received your message', {
@@ -109,7 +111,7 @@ export default class contact extends Component {
 
     render() {
         return (
-            <div>
+            <div className="homeDiv">
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}
@@ -153,7 +155,18 @@ export default class contact extends Component {
                             </div>
                             <div>
                                 <label>Phone: *</label>
-                                <input type='tel' name='phone' value={this.state.phone} onChange={this.handle_change} className={`${this.state.error_phone && 'error'} `}/>
+                                <PhoneInput
+                                    name="phone"
+                                    country={'us'}
+                                    value={this.state.phone}
+                                    onChange={phone => this.setState({phone})}
+                                    className={`${this.state.error_phone && 'error'} `}
+                                    enableSearch={true}
+                                    enableLongNumbers={true}
+                                    inputProps={{
+                                        name: 'phone'
+                                    }}
+                                />
                             </div>
                              
 
