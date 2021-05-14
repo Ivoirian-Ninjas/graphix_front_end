@@ -108,7 +108,7 @@ export default function Home() {
                        </div>
                         <h3 className='serviceHomeTitle'>Fullstack Developpment</h3>
                         <p className='serviceHomeText'>
-                            Our developers are experts in many development languages and we work tirelessly to stay up to date...
+                            Our developers are experts in many development languages and we work tirelessly to stay up to date.
                         </p>
                    </div>
                    <div className='divServiceHome'>
@@ -117,7 +117,7 @@ export default function Home() {
                        </div>
                         <h3 className='serviceHomeTitle'>Mobile Developpment</h3>
                         <p className='serviceHomeText'>
-                            Most websites in today’s world need a mobile application to go along with them. Our team specializes...
+                            Most websites in today’s world need a mobile application to go along with them. Our team specializes.
                         </p>
                    </div>
                    <div className='divServiceHome'>
@@ -126,7 +126,7 @@ export default function Home() {
                        </div>
                         <h3 className='serviceHomeTitle'>Visual Design</h3>
                         <p className='serviceHomeText'>
-                            Many sites suffer from poor performance. We work with you to improve key areas of your web or mobile...
+                            Many sites suffer from poor performance. We work with you to improve key areas of your web or mobile.
                         </p>
                    </div>
                </div>
