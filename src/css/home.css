@@ -1,16 +1,14 @@
-@font-face{
-    src: url('../fonts/Robodron_Font/Robodron Bold.otf');
-    font-family: Robodron;
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .homeDiv{
     margin: 13vh 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 .divFirstImgs{
     width: 100%;
@@ -31,6 +29,9 @@
     left: 0;
     margin-bottom: 15%;
     margin-left: 7%;
+    max-width: 100vw;
+    overflow-y: hidden;
+
 }
 .blackCover{
     position:absolute;
@@ -75,4 +76,179 @@
     color: rgb(255, 17, 88);
     transition: 0.3s ease-in;
     /* border: 1px solid rgb(255, 17, 88); */
+}
+.firstTextHome{
+    width: 100%;
+    padding: 40px 10%;
+    margin: 0;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.firstTextTitle{
+    margin: 20px 0;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+.firstTextContain{
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Montserrat;
+    display: flex;
+    margin: 3% 0;
+}
+.ourQualities{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 2% 10%;
+    display: block;
+}
+.divQuality{
+    width: 100%;
+    display: flex;
+    margin: 5% 0 6% 0;
+    justify-content: space-between;
+}
+.divQualityImgs{
+    width: 500px;
+    height: 350px;
+    /* background: coral; */
+}
+.divQualityText{
+    width: 50%;
+    padding: 10% 3%;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Montserrat;
+    /* background: rgb(46, 15, 4); */
+}
+.divQualityNames{
+    width: 100%;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+/* .divDots{
+    height: 420px;
+    width: 300px;
+    position: absolute;
+    overflow-y: hidden;
+
+} */
+.divImgsQualities{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.imgQuality{
+    width: 100%;
+    height: 350px;
+}
+.moreAboutHome{
+    width: 30%;
+    margin: 2% auto;
+    border: 2px solid rgb(255, 31, 106);
+    background: white;
+    padding: 13px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.moreLinkHome{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Montserrat;
+    transition: 0.3s ease-in-out;
+}
+.moreAboutHome:hover{
+    background: rgb(255, 31, 106);
+    transition: 0.3s ease-in-out;
+}
+.moreAboutHome:hover .moreLinkHome{
+    color: rgb(253, 253, 253);
+    transition: 0.3s ease-in-out;
+}
+.divServicesHome{
+    width: 100%;
+    /* background: rgb(255, 17, 88); */
+    display: flex;
+    margin: 5% 0;
+    justify-content: space-between;
+}
+.divServiceHome{
+    border: 1px solid rgb(32, 32, 32);
+    margin: 2%;
+    padding: 2% 3%;
+}
+.serviceHomeTitle{
+    width: 100%;
+    font-size: 18px;
+    font-family: Montserrat;
+    margin: 7% 0;
+    height: 30px;
+}
+.serviceHomeText{
+    width: 100%;
+    font-size: 16px;
+    font-family: Montserrat;
+    margin: 15% 0 10% 0;
+    text-align: left;
+}.divServiceIcon{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+.serviceIcon{
+    width: 140px;
+    height: 140px;
+}
+.serviceIconAlt{
+    width: 140px;
+    height: 110px;
+}
+.serviceIconDesign{
+    width: 140px;
+    height: 130px;
+}
+.firstTextHomes{
+    width: 100%;
+    padding: 5px 10%;
+    margin: 0;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.firstTextTitles{
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+.moreAboutHomes{
+    width: 30%;
+    margin: 2% auto;
+    border: none;
+    background: rgb(255, 31, 106);
+    padding: 13px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.moreLinkHomes{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Montserrat;
+    transition: 0.3s ease-in-out;
 }

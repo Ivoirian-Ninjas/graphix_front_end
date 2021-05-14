@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import '../css/navbar.css'
 import {menuItems} from './menuItems'
 import $ from 'jquery'
-import logo from '../imgs/graphixLogo.png';
+import logo from '../imgs/logo/graphixLogo.png';
 const Navbar = () => {
 
     function navJs() {
