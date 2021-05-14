@@ -5,8 +5,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import ReactGA from 'react-ga';
+
+
+
+
 
 export default class contact extends Component {
+
+
 
     state = {
         firstName: "",
@@ -63,7 +70,7 @@ export default class contact extends Component {
         event.preventDefault()
         if(this.validate_form()){
            
-            emailjs.sendForm('gmail', 'template_keokgzb', event.target, 'user_8ciVfWI2vuQXQWhN3imHh')
+            emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, event.target, process.env.REACT_APP_EMAIL_USER_ID)
             .then((result) => {
                 toast.success('We received your message', {
                     position: "top-center",
@@ -73,6 +80,11 @@ export default class contact extends Component {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
+                });
+                // react event fired
+                ReactGA.event({
+                    category: "User submited form (Lead Capture)",
+                    action: "User sent a lead capture form",
                 });
                 this.resetForm()
             }, (error) => {
@@ -105,7 +117,13 @@ export default class contact extends Component {
     validate_form =() => !(this.state.firstName === "" || this.state.lastName === "" || this.state.email === "" || this.state.phone ==="" || this.state.budget.value  === "" || this.state.help === "")
     
 
+   componentDidMount(){
+       const id = process.env.REACT_APP_GOOGLE_ID
+       ReactGA.initialize(id);
+       ReactGA.set({ page: window.location.pathname }); // Update the user's current page
+       ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
 
+   }
 
 
 

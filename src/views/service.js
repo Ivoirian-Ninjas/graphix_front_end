@@ -1,6 +1,14 @@
-import React from 'react'
+import React ,{  useEffect } from 'react'
+import ReactGA from 'react-ga';
 
 export default function Service() {
+
+    useEffect(() => {
+        const id = process.env.REACT_APP_GOOGLE_ID
+        ReactGA.initialize(id);
+        ReactGA.set({ page: window.location.pathname }); // Update the user's current page
+       ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
+      });
     return (
         <div>
             <div>

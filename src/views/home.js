@@ -1,4 +1,5 @@
-import React from 'react'
+import React ,{  useEffect } from 'react'
+import ReactGA from 'react-ga';
 import '../css/home.css'
 import imageLogo from '../imgs/imageWebsite/pexels-cottonbro-4709286.jpg'
 import imageQualityOne from '../imgs/illustrationImage/illus-webdesign-2.png'
@@ -7,8 +8,19 @@ import imageQualityThree from '../imgs/illustrationImage/080af88a8ae50250f0fa247
 import serviceImgsOne from '../imgs/iconImage/web-skill.png'
 import serviceImgsTwo from '../imgs/iconImage/mobileDev copy.png'
 import serviceImgsThree from '../imgs/iconImage/VSD.png'
+
+
 export default function Home() {
    const  goToContact = () => window.location.href = window.location.origin + "/contact"
+
+
+   useEffect(() => {
+    const id = process.env.REACT_APP_GOOGLE_ID
+    console.log(process.env)
+    ReactGA.initialize(id);
+    ReactGA.set({ page: window.location.pathname }); // Update the user's current page
+    ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
+  });
       
     return (
         <div className="homeDiv">
@@ -104,7 +116,7 @@ export default function Home() {
                <div className='divServicesHome'>
                    <div className='divServiceHome'>
                        <div className='divServiceIcon'>
-                            <img src={serviceImgsOne} alt='Image' className='serviceIcon' />
+                            <img src={serviceImgsOne} alt="ImageService" className='serviceIcon' />
                        </div>
                         <h3 className='serviceHomeTitle'>Fullstack Developpment</h3>
                         <p className='serviceHomeText'>
@@ -113,7 +125,7 @@ export default function Home() {
                    </div>
                    <div className='divServiceHome'>
                         <div className='divServiceIcon'>
-                            <img src={serviceImgsTwo} alt='Image' className='serviceIconAlt' />
+                            <img src={serviceImgsTwo} alt='ServiceIcon' className='serviceIconAlt' />
                        </div>
                         <h3 className='serviceHomeTitle'>Mobile Developpment</h3>
                         <p className='serviceHomeText'>
@@ -122,7 +134,7 @@ export default function Home() {
                    </div>
                    <div className='divServiceHome'>
                         <div className='divServiceIcon'>
-                            <img src={serviceImgsThree} alt='Image' className='serviceIconDesign' />
+                            <img src={serviceImgsThree} alt='ServieIcon1' className='serviceIconDesign' />
                        </div>
                         <h3 className='serviceHomeTitle'>Visual Design</h3>
                         <p className='serviceHomeText'>

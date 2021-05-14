@@ -8,6 +8,8 @@ import About from './views/about'
 import Contact from './views/contact'
 import Service from './views/service'
 
+
+
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import Navbar from './components/navbar'
@@ -20,6 +22,8 @@ import {
 } from "react-router-dom";
 
 require('dotenv').config()
+
+
 function App() {
   return (
     <Router>
