@@ -1,4 +1,5 @@
 import React ,{  useEffect } from 'react'
+import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 
 export default function Service() {
@@ -11,6 +12,12 @@ export default function Service() {
       });
     return (
         <div>
+            {/* Do not modify the code shown in Helmet. This is for the backend */}
+            <Helmet>
+                <title>Graphix CK Services Page Develop Web And Mobile Solutions At An Affordable Price</title>
+                <meta name="description" content="At Graphix, the services we provide to our clients are tailored to their specific needs. However, we have a wide range of tools that we use to give our clients the best experience possible." />
+            </Helmet>
+
             <div>
               <h1>How we can help your business grow</h1>
               <div>

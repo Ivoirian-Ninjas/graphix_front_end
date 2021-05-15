@@ -1,4 +1,5 @@
 import React ,{  useEffect } from 'react'
+import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 import '../css/home.css'
 import imageLogo from '../imgs/imageWebsite/pexels-cottonbro-4709286.jpg'
@@ -24,6 +25,12 @@ export default function Home() {
       
     return (
         <div className="homeDiv">
+            {/* Do not modify the code shown in Helmet. This is for the backend */}
+            <Helmet>
+                <title>Graphix CK Home Page Affordable Full Stack Web Development</title>
+                <meta name="description" content="At Graphix, we pride ourselves to be a customer-centric company; In fact, it is this core value that pushes us to provide our services at an affordable price." />
+            </Helmet>
+
            <div className='divFirstImgs'>
                 <div className='bigTitleHomes'>
                     <p className='companyNameHome'>Graphix</p>

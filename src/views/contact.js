@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Helmet} from 'react-helmet'
 import Select from 'react-select'
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
@@ -130,6 +131,13 @@ export default class contact extends Component {
     render() {
         return (
             <div className="homeDiv">
+                {/* Do not modify the code shown in Helmet. This is for the backend */}
+                <Helmet>
+                    <title>Graphix CK Contact Page Develop Affordable Web And Mobile Design Contact Us</title>
+                    <meta name="description" content="Contact Graphix for your projects. We will be happy to help get one step closer to success." />
+                </Helmet>
+
+                {/* The ToastContainer is for the notification. There is no need to add CSS. */}
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}
@@ -141,6 +149,7 @@ export default class contact extends Component {
                     draggable
                     pauseOnHover
                 />
+
                <div>
                     <p>
                         Please fill out the form below and let us know how we can best assit you.

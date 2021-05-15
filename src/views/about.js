@@ -1,4 +1,5 @@
 import React ,{  useEffect } from 'react'
+import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 
 
@@ -13,6 +14,11 @@ export default function About() {
 
     return (
         <div>
+             {/* Do not modify the code shown in Helmet. This is for the backend */}
+             <Helmet>
+                <title>Graphix CK About Page Based In The USA And Ivory Coast (Côte D'Ivoire)</title>
+                <meta name="description" content="Graphix is based in the USA and Ivory Coast. You guessed it, we also speak French." />
+            </Helmet>
            <div>
                <div>
                    <div>
