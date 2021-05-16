@@ -19,7 +19,7 @@ export default class About extends Component {
     
     render() {
         return (
-            <div>
+            <div >
             {/* Do not modify the code shown in Helmet. This is for the backend */}
             <Helmet>
                <title>Graphix CK About Page Based In The USA And Ivory Coast (Côte D'Ivoire)</title>
@@ -94,9 +94,11 @@ export default class About extends Component {
                Graphix is based in the USA and Ivory Coast. You guessed it, we also speak French. <br/>
                Our team, in those two countries, allows us to work on projects (24/7), and deliver our solutions with time efficiency.
               </p>
-              <div style={{ height: '1000px', width: '1100px' }}>
-                   <Map />
-              </div>
+            
+                <Map/>
+           
+            
+              
           </div>
 
            <div>
