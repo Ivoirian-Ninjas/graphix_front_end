@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.divContact{
+    margin: 15vh 0 0 0;
+    width: 100%;
+    padding: 3% 10%;
+}
+.divFirstTextContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstTextContact{
+    font-size: 21px;
+    font-family: Arial;
+}
+.divEmailUs{
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+}
+.emailUs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.mailContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+}

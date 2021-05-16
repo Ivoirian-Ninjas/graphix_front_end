@@ -3,7 +3,7 @@ import Select from 'react-select'
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import '../css/contact.css'
 
 export default class contact extends Component {
 
@@ -109,7 +109,7 @@ export default class contact extends Component {
 
     render() {
         return (
-            <div>
+            <div className='divContact'>
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}
@@ -121,22 +121,22 @@ export default class contact extends Component {
                     draggable
                     pauseOnHover
                 />
-               <div>
-                    <p>
+               <div className='divFirstTextContact'>
+                    <p className='firstTextContact'>
                         Please fill out the form below and let us know how we can best assit you.
                     </p>
                 </div> 
 
-                <div>
-                    <p>
+                <div className='divEmailUs'>
+                    <p className='emailUs'>
                         Email us at
                     </p>
-                    <a href="mailto:info@graphix-ck.com" target="blank">
+                    <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact'>
                         info@graphix-ck.com
                     </a>
                 </div>
                
-                <div>
+                <div className='divFormContact'>
                     <form onSubmit={this.handle_submit}>
                         <div>
                             <div>
