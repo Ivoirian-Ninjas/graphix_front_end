@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .divFooter{
     width: 100%;
@@ -43,6 +43,9 @@
 .imgFooter{
     width: 130px;
     height: 90px;
+}
+.divIconFooter a{
+    margin-right: 3%;
 }
 .iconFoot{
     margin: 0 2%;

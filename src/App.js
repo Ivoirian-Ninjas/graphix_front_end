@@ -7,6 +7,8 @@ import Home from './views/home'
 import About from './views/about'
 import Contact from './views/contact'
 import Service from './views/service'
+import './framework/fontawesome-free-5.11.2-web/css/all.css'
+
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
@@ -20,6 +22,8 @@ import {
 } from "react-router-dom";
 
 require('dotenv').config()
+
+
 function App() {
   return (
     <Router>

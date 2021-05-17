@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
+import {Helmet} from 'react-helmet'
 import Select from 'react-select'
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/contact.css'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import ReactGA from 'react-ga';
+import gmailIcon from '../imgs/iconImage/icons8-mails-100.png'
 
 export default class contact extends Component {
+
+
 
     state = {
         firstName: "",
@@ -61,7 +68,8 @@ export default class contact extends Component {
     handle_submit = (event) => {
         event.preventDefault()
         if(this.validate_form()){
-            emailjs.sendForm('gmail', 'template_keokgzb', event.target, 'user_8ciVfWI2vuQXQWhN3imHh')
+           
+            emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, event.target, process.env.REACT_APP_EMAIL_USER_ID)
             .then((result) => {
                 toast.success('We received your message', {
                     position: "top-center",
@@ -71,6 +79,11 @@ export default class contact extends Component {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
+                });
+                // react event fired
+                ReactGA.event({
+                    category: "User submited form (Lead Capture)",
+                    action: "User sent a lead capture form",
                 });
                 this.resetForm()
             }, (error) => {
@@ -103,13 +116,26 @@ export default class contact extends Component {
     validate_form =() => !(this.state.firstName === "" || this.state.lastName === "" || this.state.email === "" || this.state.phone ==="" || this.state.budget.value  === "" || this.state.help === "")
     
 
+   componentDidMount(){
+       const id = process.env.REACT_APP_GOOGLE_ID
+       ReactGA.initialize(id);
+       ReactGA.set({ page: window.location.pathname }); // Update the user's current page
+       ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
 
+   }
 
 
 
     render() {
         return (
             <div className='divContact'>
+                {/* Do not modify the code shown in Helmet. This is for the backend */}
+                <Helmet>
+                    <title>Graphix CK Contact Page Develop Affordable Web And Mobile Design Contact Us</title>
+                    <meta name="description" content="Contact Graphix for your projects. We will be happy to help get one step closer to success." />
+                </Helmet>
+
+                {/* The ToastContainer is for the notification. There is no need to add CSS. */}
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}
@@ -121,69 +147,78 @@ export default class contact extends Component {
                     draggable
                     pauseOnHover
                 />
-               <div className='divFirstTextContact'>
-                    <p className='firstTextContact'>
-                        Please fill out the form below and let us know how we can best assit you.
-                    </p>
-                </div> 
-
                 <div className='divEmailUs'>
-                    <p className='emailUs'>
-                        Email us at
-                    </p>
-                    <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact'>
-                        info@graphix-ck.com
-                    </a>
+                    <div>
+                        <span className='contactUs'>Contact us</span>
+                        <p className='textContactUs'>Graphix CK Contact Page Develop Affordable Web And Mobile Design</p>
+                        <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact'>
+                            <img src={gmailIcon} alt='icon' className='gmailIcon' />
+                            info@graphix-ck.com
+                        </a>
+                    </div>
                 </div>
                
                 <div className='divFormContact'>
+                    <p className='getInTouch'>
+                        Get in Touch
+                    </p>
+                    <p className='titleContactText'>
+                        Please fill out the form below and let us know how we can best assit you.
+                    </p>
                     <form onSubmit={this.handle_submit}>
-                        <div>
-                            <div>
-                                <label>Frist Name: *</label>
-                                <input name='firstName' value={this.state.firstName}  onChange={this.handle_change} className={`${this.state.error_firstName && 'error' } `}/>
+                        <div className='userInfoContact'>
+                            <div className='divFirstInfo'>
+                                <input name='firstName' placeholder='Frist Name' value={this.state.firstName}  onChange={this.handle_change} className={`${this.state.error_firstName && 'error' } inputContact`}/>
                             </div>
-                            <div>
-                                <label>Last Name: *</label>
-                                <input name='lastName' value={this.state.lastName} onChange={this.handle_change} className={`${this.state.error_lastName && 'error'} `}/>
+                            <div className='divFirstInfo'>
+                                <input name='lastName' placeholder='Last Name' value={this.state.lastName} onChange={this.handle_change} className={`${this.state.error_lastName && 'error'} inputContact`}/>
                             </div>
-                            <div>
-                                <label>Email: *</label>
-                                <input type='email' name='email' value={this.state.email} onChange={this.handle_change} className={ `${this.state.error_email && 'error'}  `}/>
+                            <div className='div2ndInfo'>
+                                <input type='email' placeholder='username@mail.com' name='email' value={this.state.email} onChange={this.handle_change} className={ `${this.state.error_email && 'error'}  inputContact`}/>
                             </div>
-                            <div>
-                                <label>Phone: *</label>
-                                <input type='tel' name='phone' value={this.state.phone} onChange={this.handle_change} className={`${this.state.error_phone && 'error'} `}/>
-                            </div>
-                             
-
                         </div>
 
-                        <div>
-                            <label htmlFor="budget-select">What is your approximate budget? *</label>
+                        <div className='userInfoContact'>
+                            <textarea 
+                             name='help' 
+                             value={this.state.help} 
+                             placeholder='How can we help? *'
+                             onChange={this.handle_change}
+                             className={`${this.state.error_help && 'error'} areaContact`}
+                             >
+                            </textarea>
+                        </div>
+                        <div className='userInfoContact'>
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
-                                className={`${this.state.error_budget && 'error'} `}
+                                className={`${this.state.error_budget && 'error'} basic-single`}
+                                classNamePrefix="select"
                                 options={this.options} 
                                 onChange={this.handle_select} 
                                 name="budget"
                                 value={this.state.budget}
-                                placeholder ="Please choose an option"
+                                placeholder ="What is your approximate budget?"
+                            />
+                        </div>
+                        <div>
+                            <label>Phone: *</label>
+                            <PhoneInput
+                                name="phone"
+                                country={'us'}
+                                value={this.state.phone}
+                                onChange={phone => this.setState({phone})}
+                                inputClass={`${this.state.error_phone && 'error'} `}
+                                enableSearch={true}
+                                enableLongNumbers={true}
+                                inputProps={{
+                                name: 'phone'
+                                }}
                             />
                         </div>
 
-                        <div>
-                            <label>How can we help? *</label>
-                            <textarea 
-                             name='help' 
-                             value={this.state.help} 
-                             onChange={this.handle_change}
-                             className={`${this.state.error_help && 'error'} `}
-                             >
-                            </textarea>
-                        </div>
-
-                        <button> Send </button>
+                        <button className='SendContactForm'> 
+                           <i className='fa fa-paper-plane'></i> Send 
+                        </button>
 
                     </form>
                 </div>
