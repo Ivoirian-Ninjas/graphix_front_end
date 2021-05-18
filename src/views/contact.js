@@ -249,9 +249,13 @@ export default class contact extends Component {
                                 // containerStyle={{
                                 //     border: "10px solid black"
                                 // }}
-                                // inputStyle={{
-                                //     background: "lightblue"
-                                // }}
+                                inputStyle={{
+                                    background: "lightblue",
+                                    width: "100%"
+                                }}
+                              
+                             
+                                 disableDropdown	
                             />
                         </div>
           
