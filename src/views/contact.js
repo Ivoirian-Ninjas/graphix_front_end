@@ -200,8 +200,8 @@ export default class contact extends Component {
                                 placeholder ="What is your approximate budget?"
                             />
                         </div>
-                        <div>
-                            <label>Phone: *</label>
+                        <div className='userInfoContact'>
+                            <p className='phoneContact'>Phone: </p>
                             <PhoneInput
                                 name="phone"
                                 country={'us'}

@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 import Map from '../components/map'
-import Select from 'react-select';
-
-
+import '../css/about.css'
+import imageTop from '../imgs/imageWebsite/pexels-cottonbro-4709289.jpg'
 export default class About extends Component {
 
     options = [
@@ -24,12 +23,24 @@ export default class About extends Component {
     
     render() {
         return (
-            <div >
+            <div className='divBigAbout'>
             {/* Do not modify the code shown in Helmet. This is for the backend */}
             <Helmet>
                <title>Graphix CK About Page Based In The USA And Ivory Coast (Côte D'Ivoire)</title>
                <meta name="description" content="Graphix is based in the USA and Ivory Coast. You guessed it, we also speak French." />
            </Helmet>
+           <div className='divImgTopAbout'>
+                <img src={imageTop} alt='Images' className='imageTop' />
+                <div className='coverTopAbout'></div>
+                <p className='textInsideTop'> 
+                    {/* Change the text below*/}
+                    <b className='titleInsideTopAbout'>Who We Are</b> <br />
+                    At Graphix, we are genuinely happy and excited to bring our values to life every day. 
+                    Following these values allow us to be the best at what we do. Every client has their own 
+                    problem to solve, and we want to help by providing a seamless experience with Integrity. 
+                    Want to learn more? Scroll down to find out more about our core values and our process.
+                </p>
+           </div>
           <div>
               <div>
                   <div>
@@ -76,12 +87,6 @@ export default class About extends Component {
 
           <div>
               <h1>Meet the team</h1>
-              <Select
-    name="colors"
-    options={this.options}
-    className="basic-multi-select"
-    classNamePrefix="select"
-  />
               <div>
                    {/* Add image here */}
                    <div>
