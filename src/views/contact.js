@@ -127,32 +127,22 @@ export default class contact extends Component {
 
 
     render() {
-        // Style the Select input Here
-        const customStyles = {
-            option: (provided, state) => ({
-              ...provided,
-              borderBottom: '1px dotted pink',
-              color: state.isSelected ? 'red' : 'blue',
-              padding: 20,
-            }),
-            menu: (provided, state) => ({
-                ...provided,
-                width: state.selectProps.width,
-                borderBottom: '1px dotted pink',
-                color: state.selectProps.menuColor,
-                padding: 20,
-              }),
-            control: () => ({
-              // none of react-select's styles are passed to <Control />
-              width: 200,
-            }),
-            singleValue: (provided, state) => {
-              const opacity = state.isDisabled ? 0.5 : 1;
-              const transition = 'opacity 300ms';
-          
-              return { ...provided, opacity, transition };
-            }
-          }
+     
+
+
+      const customStyles = {
+        option: (provided, state) => ({
+          ...provided,
+          width: "100%",
+       
+        }),
+        control: (provided,state) => ({
+            ...provided,
+          width: "100%",
+          height: "50px",
+          border: "1px solid  #343840"
+        })
+    }
         return (
             <div className='divContact'>
                 {/* Do not modify the code shown in Helmet. This is for the backend */}
@@ -203,22 +193,12 @@ export default class contact extends Component {
                                 <input type='email' placeholder='username@mail.com' name='email' value={this.state.email} onChange={this.handle_change} className={ `${this.state.error_email && 'error'}  inputContact`}/>
                             </div>
                         </div>
-
-                        <div className='userInfoContact'>
-                            <textarea 
-                             name='help' 
-                             value={this.state.help} 
-                             placeholder='How can we help? *'
-                             onChange={this.handle_change}
-                             className={`${this.state.error_help && 'error'} areaContact`}
-                             >
-                            </textarea>
-                        </div>
-                        <div className='userInfoContact'>
+                        {/* Leave the budget at this position */}
+                        <div className='userInfoContact' >
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
+
                                 className={`${this.state.error_budget && 'error'} basic-single`}
-                                classNamePrefix="select"
                                 options={this.options} 
                                 onChange={this.handle_select} 
                                 name="budget"
@@ -238,6 +218,18 @@ export default class contact extends Component {
                                 })}
                             />
                         </div>
+                      
+                        <div className='userInfoContact'>
+                            <textarea 
+                             name='help' 
+                             value={this.state.help} 
+                             placeholder='How can we help? *'
+                             onChange={this.handle_change}
+                             className={`${this.state.error_help && 'error'} areaContact`}
+                             >
+                            </textarea>
+                        </div>
+                      
                         <div>
                             <label>Phone: *</label>
                             <PhoneInput
@@ -262,6 +254,7 @@ export default class contact extends Component {
                                 // }}
                             />
                         </div>
+          
 
                         <button className='SendContactForm'> 
                            <i className='fa fa-paper-plane'></i> Send 
