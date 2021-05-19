@@ -7,6 +7,8 @@ import imageTop from '../imgs/imageWebsite/pexels-cottonbro-4709289.jpg'
 import Img1stQ from '../imgs/imageWebsite/xps-6uneKLGrJPs-unsplash.jpg'
 import Img2ndQ from '../imgs/imageWebsite/pexels-athena-2582937.jpg'
 import Img3rdQ from '../imgs/imageWebsite/pexels-aleksandar-pasaric-2603464.jpg'
+import Jean from '../imgs/imageMember/Jean.jpg'
+import Loic from '../imgs/imageMember/Loic.jpeg'
 export default class About extends Component {
 
     options = [
@@ -80,9 +82,12 @@ export default class About extends Component {
               </p>
           </div>
 
-          <div className='firstTextAbout'>
-                <h1 className='firstTextTitleAbout'>Why do we exist</h1>
-                <p className='firstTextContain'>
+          <div className='firstTextAbout2'>
+            <div className='coverTopAbout2'></div>
+            <div className='divContainWhy'>
+                <h1 className='firstTextTitleAbout2'>Why do we exist</h1>
+
+                <p className='firstTextContain2'>
                     With the recent pandemic that hit the world, more and more businesses started to realize 
                     that having an online presence is unavoidable. 
                     However, building a web or a mobile application is not an easy task. 
@@ -91,38 +96,81 @@ export default class About extends Component {
                     the sole goal of helping businesses rise to the top. 
                     Because we put the customer first, Graphix provides web services at an affordable price.
                 </p>
+            </div>
           </div>
 
           <div className='firstTextAbout'>
               <h1 className='firstTextTitleAbout'>Meet the team</h1>
-              <div>
-                   {/* Add image here */}
-                   <div>
-                       <h3>Michel Konan</h3>
-                       <p>Front-End Developer</p>
-                   </div>
-               </div>
-               <div>
-                  {/* Add image here */}
-                  <div>
-                      <h3>Cloe Kouadjo</h3>
-                      <p>Back-End Developer</p>
-                  </div>   
-              </div>
           </div>
+          <div className='divContainerMember'>
+                <div className='cardMember'>
+                    <div className='contentMember'>
+                        <div className='boxImageMember'>
+                            <img src={Jean} alt='member one' className='imgMember' />
+                        </div>
+                        <div className='boxContentInfo'>
+                            <h3>Michel N'GUESSAN</h3>
+                            <p>Front-End Developer</p>
+                        </div>
+                    </div>
+                    <ul className='ulSocial'>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fab fa-facebook-square'></i>
+                            </a>
+                        </li>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fab fa-instagram'></i>
+                            </a>
+                        </li>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fa fa-envelope-square'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div className='cardMember'>
+                    <div className='contentMember'>
+                        <div className='boxImageMember'>
+                            <img src={Loic} alt='member one' className='imgMember' />
+                        </div>
+                        <div className='boxContentInfo'>
+                            <h3>Cloe Kouadjo</h3>
+                            <p>Back-End Developer</p>
+                        </div>
+                    </div>
+                    <ul className='ulSocial'>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fab fa-facebook-square'></i>
+                            </a>
+                        </li>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fab fa-instagram'></i>
+                            </a>
+                        </li>
+                        <li className='liSocial'>
+                            <a href='#' className='aSocial'>
+                                <i className='fa fa-envelope-square'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
 
           <div className='firstTextAbout'>
               <h1 className='firstTextTitleAbout'>Based in USA and Ivory Coast</h1>
               <p className='firstTextContain'>
                Graphix is based in the USA and Ivory Coast. You guessed it, we also speak French. <br/>
                Our team, in those two countries, allows us to work on projects (24/7), and deliver our solutions with time efficiency.
-              </p>
-            <div className='divMap'> 
+              </p>                     
+          </div>
+          <div className='divMap'> 
                 <Map/>
            </div>
-            
-              
-          </div>
 
            <div className='firstTextAbout'>
                <h1 className='firstTextTitleAbout'>Stil unsure of have more quetions?</h1>
@@ -131,7 +179,11 @@ export default class About extends Component {
                    want to see our previous work.
                    Our team will be thrilled to showcase its knowledge.
                </p>
-               <a href="/contact">Let's Get Started</a>
+               <div className='moreAboutHomes'>
+                    <a href="/contact" className='moreLinkHomes'>
+                            Let's Get Started
+                    </a>
+               </div>
            </div>
            
        </div>

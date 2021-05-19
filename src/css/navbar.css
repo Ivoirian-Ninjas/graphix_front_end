@@ -9,6 +9,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +17,7 @@ nav {
     background-color: #395fac;
     font-family: Titillium, sans-serif;
     z-index: 100;
+    overflow-x: hidden;
 }
 
 .logo {

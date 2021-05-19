@@ -5,8 +5,8 @@ import React, { Component } from 'react'
 const mapStyles = {
     width: '100%',
     height: '500px',
-    "overflow-x": 'visible',
-    display:'block'
+    "overflow-x": 'hidden',
+    position:'absolute',
   };
 
 
