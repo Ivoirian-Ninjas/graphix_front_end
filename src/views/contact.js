@@ -127,6 +127,32 @@ export default class contact extends Component {
 
 
     render() {
+        // Style the Select input Here
+        const customStyles = {
+            option: (provided, state) => ({
+              ...provided,
+              borderBottom: '1px dotted pink',
+              color: state.isSelected ? 'red' : 'blue',
+              padding: 20,
+            }),
+            menu: (provided, state) => ({
+                ...provided,
+                width: state.selectProps.width,
+                borderBottom: '1px dotted pink',
+                color: state.selectProps.menuColor,
+                padding: 20,
+              }),
+            control: () => ({
+              // none of react-select's styles are passed to <Control />
+              width: 200,
+            }),
+            singleValue: (provided, state) => {
+              const opacity = state.isDisabled ? 0.5 : 1;
+              const transition = 'opacity 300ms';
+          
+              return { ...provided, opacity, transition };
+            }
+          }
         return (
             <div className='divContact'>
                 {/* Do not modify the code shown in Helmet. This is for the backend */}
@@ -198,6 +224,18 @@ export default class contact extends Component {
                                 name="budget"
                                 value={this.state.budget}
                                 placeholder ="What is your approximate budget?"
+
+                                // Modify CSS with those value below
+                                styles={customStyles}
+                                theme={theme => ({
+                                    ...theme,
+                                    borderRadius: 0,
+                                    colors: {
+                                      ...theme.colors,
+                                      primary25: 'hotpink',
+                                      primary: 'black',
+                                    }
+                                })}
                             />
                         </div>
                         <div className='userInfoContact'>
@@ -213,6 +251,15 @@ export default class contact extends Component {
                                 inputProps={{
                                 name: 'phone'
                                 }}
+                                // Use this to add style to the phone input
+                                // containerClass="my-container-class"
+                                // inputClass="my-input-class"
+                                // containerStyle={{
+                                //     border: "10px solid black"
+                                // }}
+                                // inputStyle={{
+                                //     background: "lightblue"
+                                // }}
                             />
                         </div>
 
