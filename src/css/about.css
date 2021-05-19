@@ -1,5 +1,7 @@
 body{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0%;
 }
 .divBigAbout{
     margin: 6% 0 0 0;
@@ -58,12 +60,15 @@ body{
     padding: 5% 5% 1% 5%;
     /* background: rosybrown; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .div1stQualityAbout{
-    width: 32%;
+    width: 350px;
     display: flex;
     overflow: hidden;
+    flex-direction: column;
+    margin: 3% 1%;
 }
 .divImageQualityAbout{
     width: 100%;
@@ -74,15 +79,15 @@ body{
 }
 .coverImgAbout{
     position: absolute;
-    width: 28.8%;
-    z-index: 2;
+    width: 0;
+    z-index: 1;
     background: rgba(17, 17, 17, 0);
     height: 400px;
     transition: 0.5s ease-in-out;
 }
 .div1stQualityAbout:hover .coverImgAbout{
     position: absolute;
-    width: 28.8%;
+    width: 350px;
     z-index: 2;
     background: rgba(17, 17, 17, 0.507);
     height: 400px;
@@ -93,9 +98,10 @@ body{
     width: 100%;
     z-index: 3;
     margin-top:28%;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
     margin-left: 2%;
     font-family: Montserrat-Bold;
+    transform: translateY(0%);
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -105,16 +111,16 @@ body{
     position: absolute;
     width: 100%;
     z-index: 3;
-    margin-top:20%;
-    transition: 0.5s ease-in-out;
+    transform: translateY(-50px);
+    transition: 0.5s ;
 }
- .divLegendQualityAbout:hover{
+ /* .divLegendQualityAbout:hover{
     position: absolute;
     width: 100%;
     z-index: 3;
     margin-top:20%;
     transition: 0.5s ease-in-out;
-}
+} */
 .imageQualitiesAbout{
     width: 100%;
     height: 100%;
@@ -208,6 +214,7 @@ body{
 }
 .cardMember:hover .contentMember{
     opacity: 1;
+    transform: translateY(-20px);
 }
 .boxImageMember{
     position: relative;
@@ -253,10 +260,15 @@ body{
 .liSocial{
     list-style: none;
     margin: 0 10px;
-    transform: translateY(40px);
+    transform: translateY(30px);
     transition: 0.5s;
+    opacity: 0;
+}
+.cardMember:hover .liSocial{
+    transform: translateY(0px);
+    opacity: 1;
 }
 .aSocial{
-    color: rgb(255, 23, 131);
+    color: rgb(26, 26, 26);
     font-size: 24px;
 }
