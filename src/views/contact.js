@@ -163,6 +163,7 @@ export default class contact extends Component {
                     draggable
                     pauseOnHover
                 />
+                <div className='contactForm'>
                 <div className='divEmailUs'>
                     <div>
                         <span className='contactUs'>Contact us</span>
@@ -173,7 +174,6 @@ export default class contact extends Component {
                         </a>
                     </div>
                 </div>
-               
                 <div className='divFormContact'>
                     <p className='getInTouch'>
                         Get in Touch
@@ -268,7 +268,7 @@ export default class contact extends Component {
 
                     </form>
                 </div>
-
+                </div>
             </div>
         )
     }

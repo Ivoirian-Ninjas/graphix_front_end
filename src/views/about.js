@@ -28,7 +28,7 @@ export default class About extends Component {
     
     render() {
         return (
-            <div className='divBigAbout'>
+            <div className='homeDiv'>
             {/* Do not modify the code shown in Helmet. This is for the backend */}
             <Helmet>
                <title>Graphix CK About Page Based In The USA And Ivory Coast (Côte D'Ivoire)</title>
