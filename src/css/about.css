@@ -47,10 +47,10 @@ body{
     color: rgb(245, 245, 245);
     width: 65%;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 .titleInsideTopAbout{
-    font-size: 30px;
+    font-size: 4vw;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
@@ -150,14 +150,14 @@ body{
 .firstTextTitleAbout{
     margin: 5px 0;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 2.3vw;
     font-family: Montserrat-semiBold;
     text-transform: uppercase;
 }
 .firstTextTitleAbout2{
     margin: 5px 0;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 3vw;
     font-family: Montserrat-semiBold;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -179,11 +179,12 @@ body{
 .firstTextContain2{
     width: 100%;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     display: flex;
     margin: 3% 0;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 .divContainerMember{
     position: relative;

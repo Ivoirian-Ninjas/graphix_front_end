@@ -8,7 +8,7 @@ import '../css/contact.css'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import ReactGA from 'react-ga';
-import gmailIcon from '../imgs/iconImage/icons8-mails-100.png'
+import gmailIcon from '../imgs/iconImage/icons-mails-100.png'
 
 export default class contact extends Component {
 
