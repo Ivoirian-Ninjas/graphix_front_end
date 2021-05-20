@@ -115,17 +115,17 @@ export default class About extends Component {
                     </div>
                     <ul className='ulSocial'>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
-                                <i className='fab fa-facebook-square'></i>
+                            <a href='https://www.facebook.com/michel.konan' target="_blank" className='aSocial'>
+                                <i className='fab fa-linkedin'></i>
                             </a>
                         </li>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
+                            <a href='#' target="_blank" className='aSocial'>
                                 <i className='fab fa-instagram'></i>
                             </a>
                         </li>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
+                            <a href='mailto:michelkonan00@gmail.com' target="_blank" className='aSocial'>
                                 <i className='fa fa-envelope-square'></i>
                             </a>
                         </li>
@@ -143,17 +143,17 @@ export default class About extends Component {
                     </div>
                     <ul className='ulSocial'>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
-                                <i className='fab fa-facebook-square'></i>
+                            <a href='https://www.linkedin.com/in/cloekouadjo/' target="_blank" className='aSocial'>
+                                <i className='fab fa-linkedin'></i>
                             </a>
                         </li>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
+                            <a href='https://www.instagram.com/armel_ck' target="_blank" className='aSocial'>
                                 <i className='fab fa-instagram'></i>
                             </a>
                         </li>
                         <li className='liSocial'>
-                            <a href='#' className='aSocial'>
+                            <a href='mail_to:cloekouadjo@gmail.com' target="_blank" className='aSocial'>
                                 <i className='fa fa-envelope-square'></i>
                             </a>
                         </li>
