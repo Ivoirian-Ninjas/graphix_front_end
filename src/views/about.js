@@ -114,13 +114,13 @@ export default class About extends Component {
                         </div>
                     </div>
                     <ul className='ulSocial'>
-                        <li className='liSocial'>
+                        {/* <li className='liSocial'>
                             <a href='https://www.facebook.com/michel.konan' target="_blank" className='aSocial'>
                                 <i className='fab fa-linkedin'></i>
                             </a>
-                        </li>
+                        </li> */}
                         <li className='liSocial'>
-                            <a href='#' target="_blank" className='aSocial'>
+                            <a href='https://www.https://www.instagram.com/im_qirxk' target="_blank" className='aSocial'>
                                 <i className='fab fa-instagram'></i>
                             </a>
                         </li>
