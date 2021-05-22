@@ -120,7 +120,7 @@ export default class About extends Component {
                             </a>
                         </li> */}
                         <li className='liSocial'>
-                            <a href='https://www.https://www.instagram.com/im_qirxk' target="_blank" className='aSocial'>
+                            <a href='https://www.instagram.com/im_qirxk/' target="_blank" className='aSocial'>
                                 <i className='fab fa-instagram'></i>
                             </a>
                         </li>
