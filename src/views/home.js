@@ -68,7 +68,7 @@ export default function Home() {
                     <p className='divQualityText'>
                         <b className='divQualityNames'>Frugality</b> <br/><br/>
                          Graphix understands the power of accomplishing more with less. <br/>
-                        Knowing that there are no extra points for growing headcount or budget size,<br/>
+                        Knowing that there are no extra points for growing headcount or budget size,
                          Graphix focuses on developing solutions that are affordable, secure, and efficient.
                     </p>
                 </div>
@@ -78,7 +78,7 @@ export default function Home() {
                     <b className='divQualityNames'>Quality</b> <br/><br/>
                         On top of being frugal and transparent with our solutions, <br/>
                         we also guarantee the quality of our services. <br/>
-                        Hence, because speed matters in business, we always develop and deliver our solutions on time.
+                        Because speed matters in business, we always develop and deliver our solutions on time.
 
                     </p>
                     <div className='divQualityImgs'>

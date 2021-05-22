@@ -44,7 +44,7 @@ export default function Service() {
                 </p>       
             </div>
             <div className='divServicesList'>
-              <h1 className='titleElementServices'>How we can help your business grow</h1>
+              <h1 className='titleElementServices'>How can we help your business grow</h1>
               <div className='divServicesContain'>
                   <div className='divServicesText'>
                     <h3 className='serviceListTitle'>Fullstack Development</h3>
@@ -167,7 +167,7 @@ export default function Service() {
             </div>
 
             <div className='firstTextAbout'>
-                <h1 className='titleElementServices'>Stil unsure of have more quetions?</h1>
+                <h1 className='titleElementServices'>Stil unsure or have more quetions?</h1>
                 <p className='firstTextContain'>
                     Reach out to us and we can answer your questions personally. Also, we understand if you want to see our previous work. <br/>
                     Our team will be thrilled to showcase its knowledge.

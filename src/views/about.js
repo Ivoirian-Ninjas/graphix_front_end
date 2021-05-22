@@ -173,7 +173,7 @@ export default class About extends Component {
            </div>
 
            <div className='firstTextAbout'>
-               <h1 className='firstTextTitleAbout'>Stil unsure of have more quetions?</h1>
+               <h1 className='firstTextTitleAbout'>Stil unsure or have more quetions?</h1>
                <p className='firstTextContain'>
                    Reach out to us and we can answer your questions personally. Also, we understand if you 
                    want to see our previous work.
