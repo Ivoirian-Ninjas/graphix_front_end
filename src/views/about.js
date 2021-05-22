@@ -153,7 +153,7 @@ export default class About extends Component {
                             </a>
                         </li>
                         <li className='liSocial'>
-                            <a href='mail_to:cloekouadjo@gmail.com' target="_blank" className='aSocial'>
+                            <a href='mailto:cloekouadjo@gmail.com' target="_blank" className='aSocial'>
                                 <i className='fa fa-envelope-square'></i>
                             </a>
                         </li>
