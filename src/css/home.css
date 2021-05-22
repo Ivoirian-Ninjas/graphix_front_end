@@ -272,8 +272,6 @@
     .divFirstImgs{
         width: 100%;
         height: 100vh;
-        background: url(../imgs/imageWebsite/pexels-cottonbro-4709286.jpg);
-        background-size: cover;
     }
     .homeDiv{
         margin: 0 0;
@@ -282,7 +280,8 @@
         margin-bottom: 15%; 
     }
     .ImgHome{
-        display: none;
+        height: 100vh;
+        object-fit: cover;
     }
     .blackCover{
         height: 100vh;
