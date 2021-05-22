@@ -52,3 +52,18 @@
     color: white;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+    .copyrightGraphix{
+        font-size: 10px;
+    }
+    .divIconFooter{
+        font-size: 20px;
+    }
+    .divIconFooter a{
+        margin-right: 5%;
+    }
+    .imgFooter{
+        width: 90px;
+        height: 60px;
+    }
+}

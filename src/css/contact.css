@@ -42,7 +42,6 @@
     padding: 2% 3%;
     box-shadow: 0px 2px 19px 7px rgba(0,0,0,0.1);
     border-radius: 5px;
-    ;
 }
 .getInTouch{
     width: 100%;
@@ -171,4 +170,49 @@
     font-size: 15px;
     font-family: Montserrat-SemiBold;
     color: rgb(94, 94, 94);
+}
+@media screen and (max-width: 768px) {
+    .contactForm{
+        width: 100%;
+        max-width: 100vw;
+        padding: 2%;
+        display: block;
+    }
+    .divEmailUs{
+        width: 100%;
+        display: inline-flex;
+        width: 100%;
+        height: 200px;
+        position: relative;
+        padding: 2% 3%;
+    }
+    .mailContact{
+        font-size: 13px;
+    }
+    .textContactUs{
+        font-size: 12px;
+    }
+    .contactUs{
+        width: 100%;
+        font-size: 25px;
+    }
+    .gmailIcon{
+        width: 30px;
+        height: 30px;
+    }
+    .divFormContact{
+        background: rgb(255, 255, 255);
+        width: 100%;
+        margin: 3% 0%;
+        padding: 3% 4%;
+        box-shadow: 0px 2px 19px 7px rgba(0,0,0,0.1);
+        height: 530px;
+    }
+    .getInTouch{
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    .SendContactForm{
+        width: 90%;
+    }
 }
