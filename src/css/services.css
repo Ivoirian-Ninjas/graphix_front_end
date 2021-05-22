@@ -119,6 +119,7 @@
     height: 200px;
     /* background: chocolate; */
     margin: 1% 1%;
+    flex-direction: column;
 }
 .divLanguageImage{
     width: 100%;
@@ -138,7 +139,59 @@
     font-weight:600;
 }
 .imageLangage{
-    width: 89%;
+    width: 85%;
     height: 120px;
     /* object-fit: cover; */
+}
+@media screen and (max-width: 768px) {
+    .divImgTopServices{
+        height: 100vh;
+    }
+    
+    .imageTopServices{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .coverTopServices{
+        height: 100vh;
+    }
+    .textInsideTopServices{
+        width: 90%;
+        font-size: 4vw;
+    }
+    .titleInsideTopServices{
+        font-size: 8vw;
+    }
+    .titleElementServices{
+        font-size: 6vw;
+    }
+    .divServicesText{
+        width: 100vw;
+        height: 130px;
+    }
+    .divServicesImage{
+        width: 100%;
+    }
+    .serviceListTitle{
+        font-size: 5vw;
+    }
+    .serviceListInfo{
+        font-size: 3vw;
+    }
+    .ImageElementServices{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .divServicesContain{
+        border: 1px solid rgb(34, 34, 34);
+        padding: 0 2%;
+        margin: 1% 0;
+    }
+    .divServicesList{
+        padding: 2% 1%;
+    }
+    .divLanguageInfo{
+        width: 47%;
+    }
 }

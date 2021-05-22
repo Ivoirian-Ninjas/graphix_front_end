@@ -144,7 +144,7 @@ body{
     height: 500px;
     background: url('../imgs/imageWebsite/pexels-pixabay-356056.jpg');
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 .firstTextTitleAbout{
@@ -272,4 +272,56 @@ body{
 .aSocial{
     color: rgb(26, 26, 26);
     font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .divImgTopAbout{
+        height: 100vh;
+    }
+    .imageTop{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .coverTopAbout{
+        height: 100vh;
+    }
+    .textInsideTop{
+        margin-bottom: 15%;
+        width: 90%;
+        font-size: 4vw;
+    }
+    .titleInsideTopAbout{
+        font-size: 8vw;
+    }
+    .divQualitiesListAbout{
+        width: 100%;
+        padding: 5% 1% 1% 1%;
+    }
+    .div1stQualityAbout{
+        width: 100%;
+        margin: 3% 1%;
+        overflow: hidden;
+    }
+    .divImageQualityAbout{
+        width: 100%;
+    }
+    .div1stQualityAbout:hover .coverImgAbout{
+        width: 96%;
+        height: 400px;
+        max-width: 96%;
+    }
+    .divLegendQualityAbout{
+        position: absolute;
+        width: 90%;
+        max-width: 90%;
+        margin-top:100%;
+    }   
+    .firstTextTitleAbout2{
+        font-size: 8vw;
+    }
+    .firstTextContain2{
+        font-size: 3vw;
+    }
+    .firstTextTitleAbout{
+        font-size: 6vw;
+    }
 }
