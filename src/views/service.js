@@ -2,7 +2,7 @@ import React ,{  useEffect } from 'react'
 import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 import '../css/services.css'
-import ImageTop from '../imgs/imageWebsite/pexels-fauxels-3184460.jpg'
+import ImageTop from '../imgs/imageWebsite/pexels-pixabay-270557.jpg'
 import FullsImage from '../imgs/illustrationImage/4380747.jpg'
 import MobileImage from '../imgs/illustrationImage/2809413.jpg'
 import AppImage from '../imgs/illustrationImage/4471284.jpg'
