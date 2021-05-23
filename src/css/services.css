@@ -12,7 +12,7 @@
     width: 100%;
     height: 750px;
     transform: scale(1);
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 .coverTopServices{
     position:absolute;
@@ -34,10 +34,10 @@
     color: rgb(245, 245, 245);
     width: 65%;
     font-family: Montserrat;
-    font-size: 1.4vw;
+    font-size: 20px;
 }
 .titleInsideTopServices{
-    font-size: 3vw;
+    font-size: 60px;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
@@ -71,16 +71,15 @@
     display: block;
     text-align: left;
     /* background: lightcoral; */
-    height: 400px;
     flex-direction: column;
     overflow: hidden;
-    padding: 7% 5%;
+    padding: 13vh 5%;
     align-items: center;
 }
 .divServicesImage{
     width: 43vw;
     /* background: lightcoral; */
-    height: 400px;
+    height: 65vh;
     flex-direction: column;
     overflow: hidden;
     display: flex;
@@ -99,11 +98,10 @@
     font-size: 1.5vw;
     font-family: Montserrat;
     font-weight: 400;
-    
 }
 .ImageElementServices{
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 }
 .divLangages{
@@ -116,31 +114,31 @@
 }
 .divLanguageInfo{
     width: 17vw;
-    height: 200px;
+    height: 30vh;
     /* background: chocolate; */
     margin: 1% 1%;
     flex-direction: column;
 }
 .divLanguageImage{
     width: 100%;
-    height: 160px;
+    height: 23vh;
     /* background: crimson; */
     padding: 2vw;
 }
 .langagesName{
     /* text-transform: uppercase; */
-    font-size: 18px;
+    font-size: 1.1vw;
     font-family: Montserrat;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: 7vh;
     font-weight:600;
 }
 .imageLangage{
-    width: 80%;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 @media screen and (max-width: 768px) {
@@ -167,7 +165,8 @@
     }
     .divServicesText{
         width: 100vw;
-        height: 130px;
+        height: 30vh;
+        padding: 5vh 5%;
     }
     .divServicesImage{
         width: 100%;
@@ -193,5 +192,8 @@
     }
     .divLanguageInfo{
         width: 47%;
+    }
+    .langagesName{
+        font-size: 3vw;
     }
 }

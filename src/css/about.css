@@ -1,12 +1,15 @@
 body{
-    overflow-x: hidden;
     margin: 0;
     padding: 0%;
+    width: 100vw;
+    max-width: 100vw;
 }
-.divBigAbout{
+/* .divBigAbout{
     margin: 6% 0 0 0;
     overflow-x: hidden;
-}
+    width: 100%;
+    max-width: 100vw;
+} */
 .divImgTopAbout{
     width: 100%;
     height: 630px;
@@ -19,6 +22,7 @@ body{
     width: 100%;
     height: 750px;
     transform: scale(1);
+    object-fit: cover;
 }
 .coverTopAbout{
     position:absolute;
@@ -26,6 +30,7 @@ body{
     width: 100%;
     height: 630px;
     background: rgba(131, 131, 131, 0.158);
+    
 }
 .coverTopAbout2{
     position:absolute;
@@ -47,10 +52,10 @@ body{
     color: rgb(245, 245, 245);
     width: 65%;
     font-family: Montserrat;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .titleInsideTopAbout{
-    font-size: 4vw;
+    font-size: 60px;
     color: white;
     font-weight: 500;
     font-family: Montserrat;
@@ -64,7 +69,7 @@ body{
     flex-wrap: wrap;
 }
 .div1stQualityAbout{
-    width: 350px;
+    width: 27vw;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -72,7 +77,7 @@ body{
 }
 .divImageQualityAbout{
     width: 100%;
-    height: 400px;
+    height: 55vh;
     background: rgb(226, 226, 226);
     display: flex;
     overflow-y: hidden;
@@ -82,29 +87,30 @@ body{
     width: 0;
     z-index: 1;
     background: rgba(17, 17, 17, 0);
-    height: 400px;
+    height: 55vh;
     transition: 0.5s ease-in-out;
 }
 .div1stQualityAbout:hover .coverImgAbout{
     position: absolute;
-    width: 350px;
+    width: 27vw;
     z-index: 2;
     background: rgba(17, 17, 17, 0.507);
-    height: 400px;
+    height: 55vh;
     transition: 0.5s ease-in-out;
 }
 .divLegendQualityAbout{
     position: absolute;
-    width: 100%;
+    width: 20vw;
     z-index: 3;
-    margin-top:28%;
+    margin-top:50vh;
     transition: 0.5s;
     margin-left: 2%;
     font-family: Montserrat-Bold;
     transform: translateY(0%);
-    font-size: 18px;
+    font-size: 1.3vw;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+    /* background: red; */
 
 }
 .div1stQualityAbout:hover .divLegendQualityAbout{
@@ -114,17 +120,11 @@ body{
     transform: translateY(-50px);
     transition: 0.5s ;
 }
- /* .divLegendQualityAbout:hover{
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-    margin-top:20%;
-    transition: 0.5s ease-in-out;
-} */
 .imageQualitiesAbout{
     width: 100%;
     height: 100%;
     transform: scale(1.0);
+    object-fit: cover;
 }
 .firstTextAbout{
     width: 100%;
@@ -157,7 +157,7 @@ body{
 .firstTextTitleAbout2{
     margin: 5px 0;
     font-weight: normal;
-    font-size: 3vw;
+    font-size: 45px;
     font-family: Montserrat-semiBold;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -179,7 +179,7 @@ body{
 .firstTextContain2{
     width: 100%;
     font-weight: 500;
-    font-size: 1.3vw;
+    font-size: 20px;
     font-family: Montserrat;
     display: flex;
     margin: 3% 0;
@@ -195,8 +195,8 @@ body{
 }
 .cardMember{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 25vw;
+    height: 55vh;
     background: rgba(255, 255, 255, 0.068);
     margin: 5% 20px;
     box-shadow: 0px 2px 19px 7px rgba(0,0,0,0.1);
@@ -219,8 +219,8 @@ body{
 }
 .boxImageMember{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 155px;
+    height: 155px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid rgba(32, 32, 32, 0.61);
@@ -239,7 +239,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.6vw;
     text-align: center;
     margin: 20px 0 10px;
     line-height: 1.1em;
@@ -249,7 +249,7 @@ body{
     color: rgb(29, 29, 29);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 1.2vw;
     text-align: center;
     line-height: 1.1em;
 }
@@ -306,14 +306,15 @@ body{
     }
     .div1stQualityAbout:hover .coverImgAbout{
         width: 96%;
-        height: 400px;
+        height: 55vh;
         max-width: 96%;
     }
     .divLegendQualityAbout{
         position: absolute;
         width: 90%;
         max-width: 90%;
-        margin-top:100%;
+        font-size: 5vw;
+        /* margin-top:100%; */
     }   
     .firstTextTitleAbout2{
         font-size: 8vw;
@@ -323,5 +324,15 @@ body{
     }
     .firstTextTitleAbout{
         font-size: 6vw;
+    }
+    .cardMember{
+        width: 95vw;
+        height: 65vh;
+    }
+    .boxContentInfo h3{
+        font-size: 4vw;
+    }
+    .boxContentInfo p{
+        font-size: 3vw;
     }
 }
