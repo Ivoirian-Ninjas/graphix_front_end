@@ -5,7 +5,7 @@
     /* overflow-x: hidden; */
 }
 .homeDiv{
-    margin: 9vh 0;
+    margin: 7vh 0;
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
@@ -88,7 +88,7 @@
 .firstTextTitle{
     margin: 20px 0;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 2vw;
     font-family: Montserrat;
 }
 .firstTextContain{
@@ -113,16 +113,16 @@
     flex-wrap: wrap;
 }
 .divQualityImgs{
-    width: 500px;
-    height: 350px;
+    width: 40vw;
+    height: 50vh;
     /* background: coral; */
     flex-direction: column;
 }
 .divQualityText{
-    width: 50%;
-    padding: 10% 3%;
+    width: 40vw;
+    padding: 10vh 3%;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     flex-direction: column;
     /* background: rgb(46, 15, 4); */
@@ -130,7 +130,7 @@
 .divQualityNames{
     width: 100%;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Montserrat;
 }
 /* .divDots{
@@ -147,14 +147,15 @@
 }
 .imgQuality{
     width: 100%;
-    height: 350px;
+    height: 100%;
+    object-fit: cover;
 }
 .moreAboutHome{
     width: 30%;
     margin: 2% auto;
     border: 2px solid rgb(255, 31, 106);
     background: white;
-    padding: 13px 10px;
+    padding: 2vh 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +165,7 @@
     text-decoration: none;
     color: rgb(29, 29, 29);
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     transition: 0.3s ease-in-out;
 }
@@ -188,22 +189,23 @@
     border: 1px solid rgb(32, 32, 32);
     margin: 2%;
     padding: 2% 3%;
-    width: 300px;
+    width: 23vw;
 }
 .serviceHomeTitle{
     width: 100%;
-    font-size: 18px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     margin: 7% 0;
     height: 35px;
 }
 .serviceHomeText{
     width: 100%;
-    font-size: 16px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     margin: 15% 0 10% 0;
     text-align: left;
-}.divServiceIcon{
+}
+.divServiceIcon{
     width: 100%;
     height: 150px;
     display: flex;
@@ -234,7 +236,7 @@
 .firstTextTitles{
     margin: 20px 0;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Montserrat;
 }
 .moreAboutHomes{
@@ -242,7 +244,7 @@
     margin: 2% auto;
     border: none;
     background: rgb(255, 31, 106);
-    padding: 13px 10px;
+    padding: 2vh 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,12 +255,9 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.3vw;
     font-family: Montserrat;
     transition: 0.3s ease-in-out;
-}
-@media screen and (max-width: 1024px) {
-
 }
 
 @media screen and (max-width: 768px) {
@@ -324,8 +323,35 @@
     }
     .moreAboutHome{
         width: 80%;
+        padding: 2vh 10px;
+
     }
     .moreAboutHomes{
         width: 80%;
+    }
+    .firstTextTitle{
+        font-size: 4vw;
+    }
+    .divQualityText{
+        font-size: 3vw;
+    }
+    .divQualityNames{
+        font-size: 4vw;
+    }
+    .moreLinkHome{
+        font-size: 3vw;
+    }
+    .moreLinkHomes{
+        font-size: 3vw;
+    }
+    .divServiceHome{
+        width: 100vw;
+    }
+    .serviceHomeTitle{
+        font-size: 4vw;
+    }
+    .serviceHomeText{
+        font-size: 3vw;
+        margin: 5% 0 10% 0;
     }
 }

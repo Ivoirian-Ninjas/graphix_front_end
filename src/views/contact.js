@@ -137,10 +137,11 @@ export default class contact extends Component {
         control: (provided,state) => ({
             ...provided,
           width: "98%",
-          height: "50px",
+          height: "5vh",
           border: "none",
           background :'rgb(245, 245, 245)',
           margin:'2% 0',
+          fontSize: '0.8vw'
         })
     }
         return (
@@ -175,6 +176,7 @@ export default class contact extends Component {
                     </div>
                 </div>
                 <div className='divFormContact'>
+                    <div>
                     <p className='getInTouch'>
                         Get in Touch
                     </p>
@@ -197,8 +199,7 @@ export default class contact extends Component {
                         <div className='userInfoContact' >
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
-
-                                className={`${this.state.error_budget && 'error'} basic-single`}
+                                className={`${this.state.error_budget && 'error'} basic-single telDevise`}
                                 options={this.options} 
                                 onChange={this.handle_select} 
                                 name="budget"
@@ -237,7 +238,7 @@ export default class contact extends Component {
                                 country={'us'}
                                 value={this.state.phone}
                                 onChange={phone => this.setState({phone})}
-                                inputClass={`${this.state.error_phone && 'error'} `}
+                                inputClass={`${this.state.error_phone && 'error'} telDevise`}
                                 enableSearch={true}
                                 enableLongNumbers={true}
                                 inputProps={{
@@ -253,7 +254,8 @@ export default class contact extends Component {
                                     background: "rgb(245, 245, 245)",
                                     width: "98%",
                                     border:'none',
-                                    height:'40px',
+                                    height:'5vh',
+                                    fontSize: '0.8vw'
                                 }}
                               
                              
@@ -267,6 +269,7 @@ export default class contact extends Component {
                         </button>
 
                     </form>
+                    </div>
                 </div>
                 </div>
             </div>

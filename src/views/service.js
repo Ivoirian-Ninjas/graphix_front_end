@@ -2,7 +2,7 @@ import React ,{  useEffect } from 'react'
 import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 import '../css/services.css'
-import ImageTop from '../imgs/imageWebsite/pexels-fauxels-3184460.jpg'
+import ImageTop from '../imgs/imageWebsite/pexels-pixabay-270557.jpg'
 import FullsImage from '../imgs/illustrationImage/4380747.jpg'
 import MobileImage from '../imgs/illustrationImage/2809413.jpg'
 import AppImage from '../imgs/illustrationImage/4471284.jpg'
@@ -37,10 +37,9 @@ export default function Service() {
                     {/* Change the text below*/}
                     <b className='titleInsideTopServices'>Our Services</b> <br />
                     {/* Chqnge the text below*/}
-                    At Graphix, we are genuinely happy and excited to bring our values to life every day. 
-                    Following these values allow us to be the best at what we do. Every client has their own 
-                    problem to solve, and we want to help by providing a seamless experience with Integrity. 
-                    Want to learn more? Scroll down to find out more about our core values and our process.
+                    Our team builds web and mobile applications for many industries. <br/>
+                    We work tirelessly to stay up to date with the latest technologies and industry standards. <br/>
+                    Hence, our team focuses on frugality, which allows us to develop solutions at an affordable price.
                 </p>       
             </div>
             <div className='divServicesList'>

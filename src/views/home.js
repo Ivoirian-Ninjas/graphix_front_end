@@ -46,8 +46,9 @@ export default function Home() {
             <div className='firstTextHome'>
                 <h1 className='firstTextTitle'> What Can You Expect From Us</h1>
                 <p className='firstTextContain'>
-                    At Graphix, we pride ourselves to be a customer-centric company; In fact, it is this core value that pushes us to provide our services at an affordable price.
-                    Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
+                At Graphix, we pride ourselves on being a customer-centric company; 
+                In fact, this core value pushes us to provide our services at an affordable price. 
+                Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
                 </p>
             </div>
 
