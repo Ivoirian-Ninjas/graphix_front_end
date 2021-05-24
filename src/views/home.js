@@ -2,7 +2,7 @@ import React ,{  useEffect } from 'react'
 import {Helmet} from 'react-helmet'
 import ReactGA from 'react-ga';
 import '../css/home.css'
-import imageLogo from '../imgs/imageWebsite/pexels-cottonbro-4709286.jpg'
+import imageLogo from '../imgs/imageWebsite/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg'
 import imageQualityOne from '../imgs/illustrationImage/illus-webdesign-2.png'
 import imageQualityTwo from '../imgs/illustrationImage/4777de9e8e1419846bb5dcb8d49a801b.png'
 import imageQualityThree from '../imgs/illustrationImage/080af88a8ae50250f0fa247b1c3a012a.png'

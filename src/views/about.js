@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import ReactGA from "react-ga";
 import Map from "../components/map";
 import "../css/about.css";
-import imageTop from "../imgs/imageWebsite/pexels-cottonbro-4709289.jpg";
+import imageTop from "../imgs/imageWebsite/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg";
 import Img1stQ from "../imgs/imageWebsite/xps-6uneKLGrJPs-unsplash.jpg";
 import Img2ndQ from "../imgs/imageWebsite/pexels-athena-2582937.jpg";
 import Img3rdQ from "../imgs/imageWebsite/pexels-aleksandar-pasaric-2603464.jpg";
