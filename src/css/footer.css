@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     color: whitesmoke;
+    bottom: 0;
+    margin-bottom: 0;
+    
 }
 .copyrightGraphix{
     font-weight: 600;
@@ -52,7 +55,7 @@
     color: white;
     text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1034px) {
     .copyrightGraphix{
         font-size: 10px;
     }

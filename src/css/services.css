@@ -141,7 +141,7 @@
     height: 100%;
     object-fit: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1034px) {
     .divImgTopServices{
         height: 100vh;
     }

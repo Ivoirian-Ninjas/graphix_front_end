@@ -3,6 +3,7 @@ body{
     padding: 0%;
     width: 100vw;
     max-width: 100vw;
+    min-height: 100vh;
 }
 /* .divBigAbout{
     margin: 6% 0 0 0;
@@ -170,7 +171,14 @@ body{
     background:rgb(71, 71, 71);
     margin: 0;
     padding-right: 5%;
+    overflow-y: hidden;
+    z-index: 99;
     /* padding-left: 5%; */
+}
+.Saas{
+     height: 500px !important; 
+    /* background: red !important;
+    overflow-y: hidden; */ 
 }
 .divContainWhy{
     z-index: 5;
@@ -273,7 +281,7 @@ body{
     color: rgb(26, 26, 26);
     font-size: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1034px) {
     .divImgTopAbout{
         height: 100vh;
     }

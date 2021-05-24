@@ -31,7 +31,7 @@ const mapStyles = {
             zoom={3}
             style={mapStyles}
             initialCenter={markers.grandprairie}
-
+            className={`Saas`}
           >
 
             <Marker position={markers.abidjan}/>
