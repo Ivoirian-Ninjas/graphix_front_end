@@ -49,8 +49,8 @@ function App() {
     {/* No design or css is required for this chat bot */}
         <MessengerCustomerChat
         className={`messangerButton`}
-        pageId="108891984701971"
-        appId="294978968832597"
+        pageId={process.env.REACT_APP_FB_PAGE_ID}
+        appId={process.env.REACT_APP_FB_API_ID}
       />
 
     <Footer />
