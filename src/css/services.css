@@ -167,9 +167,16 @@
         width: 100vw;
         height: 30vh;
         padding: 5vh 5%;
+        position: absolute;
+        left: 0;
+        border-top: 1px solid rgb(34, 34, 34);
     }
     .divServicesImage{
         width: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 20vh;
+        overflow: hidden;
     }
     .serviceListTitle{
         font-size: 5vw;
@@ -183,9 +190,10 @@
         object-fit: cover;
     }
     .divServicesContain{
-        border: 1px solid rgb(34, 34, 34);
         padding: 0 2%;
         margin: 1% 0;
+        height: 85vh;
+        overflow: hidden;
     }
     .divServicesList{
         padding: 2% 1%;

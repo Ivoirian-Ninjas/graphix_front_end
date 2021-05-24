@@ -141,7 +141,7 @@ export default class contact extends Component {
           border: "none",
           background :'rgb(245, 245, 245)',
           margin:'2% 0',
-          fontSize: '0.8vw'
+          fontSize: '14px'
         })
     }
         return (

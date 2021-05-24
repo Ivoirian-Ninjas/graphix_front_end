@@ -302,7 +302,8 @@
         margin: 5% 0 6% 0;
         justify-content: center;
         flex-wrap: wrap;
-        border: 1px solid rgb(41, 41, 41);
+        /* border: 1px solid rgb(41, 41, 41); */
+        height: 60vh;
     }
     .divQualityImgs{
         width: 100%;
@@ -310,6 +311,9 @@
         /* background: coral; */
         flex-direction: column;
         padding: 2% 3%;
+        margin-top: 18vh;
+        position: absolute;
+        left: 0;
     }
     .divImgsQualities{
         overflow: hidden;
@@ -321,6 +325,11 @@
     }
     .divQualityText{
         width: 100%;
+        font-size: 3vw;
+        position: absolute;
+        right: 0;
+        border-top: 1px solid rgb(34, 34, 34);
+        padding: 3vh 3%;
     }
     .moreAboutHome{
         width: 80%;
@@ -332,9 +341,6 @@
     }
     .firstTextTitle{
         font-size: 4vw;
-    }
-    .divQualityText{
-        font-size: 3vw;
     }
     .divQualityNames{
         font-size: 4vw;
@@ -354,5 +360,8 @@
     .serviceHomeText{
         font-size: 3vw;
         margin: 5% 0 10% 0;
+    }
+    .firstTextTitles{
+        font-size: 4vw;
     }
 }
