@@ -46,8 +46,9 @@ export default function Home() {
             <div className='firstTextHome'>
                 <h1 className='firstTextTitle'> What Can You Expect From Us</h1>
                 <p className='firstTextContain'>
-                    At Graphix, we pride ourselves to be a customer-centric company; In fact, it is this core value that pushes us to provide our services at an affordable price.
-                    Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
+                At Graphix, we pride ourselves on being a customer-centric company; 
+                In fact, this core value pushes us to provide our services at an affordable price. 
+                Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
                 </p>
             </div>
 
@@ -68,7 +69,7 @@ export default function Home() {
                     <p className='divQualityText'>
                         <b className='divQualityNames'>Frugality</b> <br/><br/>
                          Graphix understands the power of accomplishing more with less. <br/>
-                        Knowing that there are no extra points for growing headcount or budget size,<br/>
+                        Knowing that there are no extra points for growing headcount or budget size,
                          Graphix focuses on developing solutions that are affordable, secure, and efficient.
                     </p>
                 </div>
@@ -78,7 +79,7 @@ export default function Home() {
                     <b className='divQualityNames'>Quality</b> <br/><br/>
                         On top of being frugal and transparent with our solutions, <br/>
                         we also guarantee the quality of our services. <br/>
-                        Hence, because speed matters in business, we always develop and deliver our solutions on time.
+                        Because speed matters in business, we always develop and deliver our solutions on time.
 
                     </p>
                     <div className='divQualityImgs'>

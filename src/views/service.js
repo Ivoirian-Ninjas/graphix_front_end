@@ -37,14 +37,13 @@ export default function Service() {
                     {/* Change the text below*/}
                     <b className='titleInsideTopServices'>Our Services</b> <br />
                     {/* Chqnge the text below*/}
-                    At Graphix, we are genuinely happy and excited to bring our values to life every day. 
-                    Following these values allow us to be the best at what we do. Every client has their own 
-                    problem to solve, and we want to help by providing a seamless experience with Integrity. 
-                    Want to learn more? Scroll down to find out more about our core values and our process.
+                    Our team builds web and mobile applications for many industries. <br/>
+                    We work tirelessly to stay up to date with the latest technologies and industry standards. <br/>
+                    Hence, our team focuses on frugality, which allows us to develop solutions at an affordable price.
                 </p>       
             </div>
             <div className='divServicesList'>
-              <h1 className='titleElementServices'>How we can help your business grow</h1>
+              <h1 className='titleElementServices'>How can we help your business grow</h1>
               <div className='divServicesContain'>
                   <div className='divServicesText'>
                     <h3 className='serviceListTitle'>Fullstack Development</h3>
@@ -167,7 +166,7 @@ export default function Service() {
             </div>
 
             <div className='firstTextAbout'>
-                <h1 className='titleElementServices'>Stil unsure of have more quetions?</h1>
+                <h1 className='titleElementServices'>Stil unsure or have more quetions?</h1>
                 <p className='firstTextContain'>
                     Reach out to us and we can answer your questions personally. Also, we understand if you want to see our previous work. <br/>
                     Our team will be thrilled to showcase its knowledge.

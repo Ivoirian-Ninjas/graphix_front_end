@@ -44,12 +44,9 @@ export default class About extends Component {
           <p className="textInsideTop">
             {/* Change the text below*/}
             <b className="titleInsideTopAbout">Who We Are</b> <br />
-            At Graphix, we are genuinely happy and excited to bring our values
-            to life every day. Following these values allow us to be the best at
-            what we do. Every client has their own problem to solve, and we want
-            to help by providing a seamless experience with Integrity. Want to
-            learn more? Scroll down to find out more about our core values and
-            our process.
+            Frugality, Quality, and Thinking Big are our core values. <br/>
+            Hence, those values represent the foundation of Graphix. <br/>
+            Following these values, allows us to start with the customer and work backward. 
           </p>
         </div>
         <div className="divQualitiesListAbout">
@@ -190,10 +187,10 @@ export default class About extends Component {
         <div className="firstTextAbout">
           <h1 className="firstTextTitleAbout">Based in USA and Ivory Coast</h1>
           <p className="firstTextContain">
-            Graphix is based in the USA and Ivory Coast. You guessed it, we also
-            speak French. <br />
-            Our team, in those two countries, allows us to work on projects
-            (24/7), and deliver our solutions with time efficiency.
+          Graphix is based in the USA and Ivory Coast. 
+          You guessed it, we also speak French. 
+          In those two countries, our team allows us to work on projects (24/7) and deliver our solutions with time efficiency.
+
           </p>
         </div>
         <div className="divMap">

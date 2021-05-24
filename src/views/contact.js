@@ -168,7 +168,7 @@ export default class contact extends Component {
                 <div className='divEmailUs'>
                     <div>
                         <span className='contactUs'>Contact us</span>
-                        <p className='textContactUs'>Graphix CK Contact Page Develop Affordable Web And Mobile Design</p>
+                        <p className='textContactUs'>We will be thrilled to talk about your new best ideas!</p>
                         <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact'>
                             <img src={gmailIcon} alt='icon' className='gmailIcon' />
                             info@graphix-ck.com
