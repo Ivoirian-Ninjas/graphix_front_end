@@ -17,7 +17,7 @@ export default function Home() {
 
    useEffect(() => {
     const id = process.env.REACT_APP_GOOGLE_ID
-    console.log(process.env)
+    console.log(window.navigator.language)
     ReactGA.initialize(id);
     ReactGA.set({ page: window.location.pathname }); // Update the user's current page
     ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
@@ -44,7 +44,7 @@ export default function Home() {
            </div>
 
             <div className='firstTextHome'>
-                <h1 className='firstTextTitle'> What Can You Expect From Us</h1>
+                <h1 className='firstTextTitle'> What you can expect from us.</h1>
                 <p className='firstTextContain'>
                 At Graphix, we pride ourselves on being a customer-centric company; 
                 In fact, this core value pushes us to provide our services at an affordable price. 
@@ -68,7 +68,7 @@ export default function Home() {
 
                     <p className='divQualityText'>
                         <b className='divQualityNames'>Frugality</b> <br/><br/>
-                         Graphix understands the power of accomplishing more with less. <br/>
+                         Graphix understands the power of accomplishing more with less. 
                         Knowing that there are no extra points for growing headcount or budget size,
                          Graphix focuses on developing solutions that are affordable, secure, and efficient.
                     </p>
@@ -77,8 +77,8 @@ export default function Home() {
                     {/* Second value */}
                     <p className='divQualityText'>
                     <b className='divQualityNames'>Quality</b> <br/><br/>
-                        On top of being frugal and transparent with our solutions, <br/>
-                        we also guarantee the quality of our services. <br/>
+                        On top of being frugal and transparent with our solutions, 
+                        we also guarantee the quality of our services.
                         Because speed matters in business, we always develop and deliver our solutions on time.
 
                     </p>
@@ -103,8 +103,8 @@ export default function Home() {
                     </div>
                     <p className='divQualityText'>
                     <b className='divQualityNames'>Think Big</b> <br/><br/>
-                        Thinking small is a self-fulfilling prophecy. <br/>
-                        At Graphix, we value businesses with big dreams. <br/>
+                        Thinking small is a self-fulfilling prophecy.
+                        At Graphix, we value businesses with big dreams. 
                         Thus, we are willing to work with our clients, regardless of their projects’ size.
                     </p>
                 </div>
@@ -115,14 +115,14 @@ export default function Home() {
             </div>
         
            <div className='firstTextHome'>
-               <h1 className='firstTextTitle'>We Are A Verstile Company</h1>
+               <h1 className='firstTextTitle'>We are a versatile company.</h1>
                <p className='firstTextContain'>
                     Graphix provides web and mobile applications for all business sizes. 
                     Because we understand the benefits of frugality, 
-                    we focus our effort on finding solutions that are affordable, secure, and efficient.
+                    we focus our efforts on finding solutions that are affordable, secure, and efficient.
                </p>
                <div className='divServicesHome'>
-                   <div className='divServiceHome'>
+                   <a className='divServiceHome' href="/service#fullstack-development">
                        <div className='divServiceIcon'>
                             <img src={serviceImgsOne} alt="ImageService" className='serviceIcon' />
                        </div>
@@ -130,8 +130,8 @@ export default function Home() {
                         <p className='serviceHomeText'>
                             Our developers are experts in many development languages and we work tirelessly to stay up to date...
                         </p>
-                   </div>
-                   <div className='divServiceHome'>
+                   </a>
+                   <a className='divServiceHome' href="/service#mobile-development">
                         <div className='divServiceIcon'>
                             <img src={serviceImgsTwo} alt='ServiceIcon' className='serviceIconAlt' />
                        </div>
@@ -139,8 +139,8 @@ export default function Home() {
                         <p className='serviceHomeText'>
                             Most websites in today’s world need a mobile application to go along with them. Our team specializes...
                         </p>
-                   </div>
-                   <div className='divServiceHome'>
+                   </a>
+                   <a className='divServiceHome' href="/service#visual-design">
                         <div className='divServiceIcon'>
                             <img src={serviceImgsThree} alt='ServieIcon1' className='serviceIconDesign' />
                        </div>
@@ -148,20 +148,20 @@ export default function Home() {
                         <p className='serviceHomeText'>
                             Many sites suffer from poor performance. We work with you to improve key areas of your web or mobile...
                         </p>
-                   </div>
+                   </a>
                </div>
                <div className='moreAboutHome'>
                 <a href="/service" className='moreLinkHome'>
-                        View all services
+                        View our services
                 </a>
                </div>
            </div>
            
            <div className='firstTextHomes'>
-               <h1 className='firstTextTitles'>Contact Us</h1>
+               {/* <h1 className='firstTextTitles'>Contact Us</h1> */}
                <div className='moreAboutHomes'>
                     <a href="/contact" className='moreLinkHomes'>
-                            Let's Get Started
+                            Contact Us
                     </a>
                </div>
            </div>

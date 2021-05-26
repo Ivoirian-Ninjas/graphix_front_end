@@ -46,7 +46,7 @@ export default class About extends Component {
             <b className="titleInsideTopAbout">Who We Are</b> <br />
             Frugality, Quality, and Thinking Big are our core values. <br/>
             Hence, those values represent the foundation of Graphix. <br/>
-            Following these values, allows us to start with the customer and work backward. 
+            Following these values, allows us to start with the customer <br/>and work backward. 
           </p>
         </div>
         <div className="divQualitiesListAbout">
@@ -87,7 +87,7 @@ export default class About extends Component {
         <div className="firstTextAbout2">
           <div className="coverTopAbout2"></div>
           <div className="divContainWhy">
-            <h1 className="firstTextTitleAbout2">Why do we exist</h1>
+            <h1 className="firstTextTitleAbout2">Why we do exist</h1>
 
             <p className="firstTextContain2">
               With the recent pandemic that hit the world, more and more
@@ -189,7 +189,7 @@ export default class About extends Component {
           <p className="firstTextContain">
           Graphix is based in the USA and Ivory Coast. 
           You guessed it, we also speak French. 
-          In those two countries, our team allows us to work on projects (24/7) and deliver our solutions with time efficiency.
+          In those two countries, our team allows us to work on projects and deliver our solutions with time efficiency.
 
           </p>
         </div>
@@ -199,7 +199,7 @@ export default class About extends Component {
 
         <div className="firstTextAbout">
           <h1 className="firstTextTitleAbout">
-            Stil unsure of have more quetions?
+            Still unsure or have more questions?
           </h1>
           <p className="firstTextContain">
             Reach out to us and we can answer your questions personally. Also,
@@ -208,7 +208,7 @@ export default class About extends Component {
           </p>
           <div className="moreAboutHomes">
             <a href="/contact" className="moreLinkHomes">
-              Let's Get Started
+              Contact Us
             </a>
           </div>
         </div>
