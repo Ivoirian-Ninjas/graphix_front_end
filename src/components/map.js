@@ -28,9 +28,9 @@ const mapStyles = {
             // Avoid having overflow-x: hidden on the map
             <Map
             google={this.props.google}
-            zoom={4}
+            zoom={3.3}
             style={mapStyles}
-            initialCenter={{lat: 20.73, lng: -30.00}}
+            initialCenter={{lat: 20.73, lng: -10.00}}
             className={`Saas`}
           >
 
