@@ -48,7 +48,6 @@ function App() {
     {/* The messenger chat will not be available on the local machine, Facebook needs to see an https signature. */}
     {/* No design or css is required for this chat bot */}
         <MessengerCustomerChat
-        className={`messangerButton`}
         pageId={process.env.REACT_APP_FB_PAGE_ID}
         appId={process.env.REACT_APP_FB_API_ID}
       />

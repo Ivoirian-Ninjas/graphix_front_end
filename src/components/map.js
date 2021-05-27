@@ -28,9 +28,9 @@ const mapStyles = {
             // Avoid having overflow-x: hidden on the map
             <Map
             google={this.props.google}
-            zoom={3}
+            zoom={4}
             style={mapStyles}
-            initialCenter={markers.grandprairie}
+            initialCenter={{lat: 20.73, lng: -30.00}}
             className={`Saas`}
           >
 
