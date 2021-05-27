@@ -20,15 +20,17 @@
     "react-scripts": "4.0.3",
     "react-select": "^4.3.1",
     "react-toastify": "^7.0.4",
+    "serve": "^11.3.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
-  "heroku-run-build-script": true,
   "eslintConfig": {
     "extends": [
       "react-app",
