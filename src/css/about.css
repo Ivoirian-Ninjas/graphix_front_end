@@ -153,14 +153,14 @@ body{
     font-weight: normal;
     font-size: 2.3vw;
     font-family: Montserrat-semiBold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .firstTextTitleAbout2{
     margin: 5px 0;
     font-weight: normal;
     font-size: 45px;
     font-family: Montserrat-semiBold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: rgb(255, 255, 255);
 }
 .divMap{
@@ -227,8 +227,8 @@ body{
 }
 .boxImageMember{
     position: relative;
-    width: 155px;
-    height: 155px;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid rgba(32, 32, 32, 0.61);
@@ -269,12 +269,12 @@ body{
 .liSocial{
     list-style: none;
     margin: 0 10px;
-    transform: translateY(30px);
+    transform: translateY(50px);
     transition: 0.5s;
     opacity: 0;
 }
 .cardMember:hover .liSocial{
-    transform: translateY(0px);
+    transform: translateY(20px);
     opacity: 1;
 }
 .aSocial{
@@ -342,5 +342,9 @@ body{
     }
     .boxContentInfo p{
         font-size: 3vw;
+    }
+    .boxImageMember{
+        width: 30vh;
+        height: 30vh;
     }
 }
