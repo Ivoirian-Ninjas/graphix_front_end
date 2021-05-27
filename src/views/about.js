@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Suspense, lazy,Component } from 'react';
 import { Helmet } from "react-helmet";
 import ReactGA from "react-ga";
-import Map from "../components/map";
+// import Map from "../components/map";
 import "../css/about.css";
 import imageTop from "../imgs/imageWebsite/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg";
 import Img1stQ from "../imgs/imageWebsite/xps-6uneKLGrJPs-unsplash.jpg";
@@ -10,6 +10,7 @@ import Img3rdQ from "../imgs/imageWebsite/pexels-aleksandar-pasaric-2603464.jpg"
 import Jean from "../imgs/imageMember/Jean.jpg";
 import Loic from "../imgs/imageMember/Loic2.jpg";
 
+const Map = lazy(()=> import("../components/map"))
 export default class About extends Component {
   options = [
     { value: "$0 - $5,000", label: "$0 - $5,000" },
@@ -194,7 +195,10 @@ export default class About extends Component {
           </p>
         </div>
         <div className="divMap">
-          <Map />
+        <Suspense fallback={<div></div>}>
+            <Map/>
+        </Suspense>
+          
         </div>
 
         <div className="firstTextAbout">
