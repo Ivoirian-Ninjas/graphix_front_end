@@ -1,7 +1,6 @@
 
 
 import React, { Suspense, lazy } from 'react';
-import './App.css';
 import './framework/fontawesome-free-5.11.2-web/css/all.css'
 
 
