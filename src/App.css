@@ -1,8 +1,8 @@
 @font-face{
   src: url('./fonts/Poppins/Poppins-Regular.ttf');
-  font-family: Poppins;
+  font-family: 'Poppins';
   src: url('./fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
-  font-family: Titillium;
+  font-family: 'Titillium';
   font-display: swap;
 }
 @font-face{
@@ -13,11 +13,11 @@
 
 @font-face{
   src: url('./fonts/Montserrat/Montserrat-Medium.ttf');
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   src: url('./fonts/Vindemia/Vindemia.ttf');
-  font-family: Vindemia;
+  font-family: 'Vindemia';
   src: url('./fonts/Montserrat/Montserrat-SemiBold.ttf');
-  font-family: Montserrat-SemiBold;
+  font-family: 'Montserrat-SemiBold';
   src: url('./fonts/Montserrat/Montserrat-Bold.ttf');
   font-family: 'Montserrat-Bold';
   font-display: swap;
