@@ -6,7 +6,7 @@
     font-display: swap;
   }
   @font-face{
-    src: url('../src/onts/Robodron_Font/Robodron Bold.otf');
+    src: url('../src/fonts/Robodron_Font/Robodron_Bold.ttf');
     font-family: Robodron;
     font-display: swap;
   }
