@@ -15,7 +15,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #395fac;
-    font-family: Titillium, sans-serif;
+    font-family: 'Titillium', sans-serif;
     z-index: 100;
     overflow-x: hidden;
 }
