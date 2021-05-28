@@ -309,7 +309,7 @@
         justify-content: center;
         flex-wrap: wrap;
         /* border: 1px solid rgb(41, 41, 41); */
-        height: 60vh;
+        height: 65vh;
     }
     .divQualityImgs{
         width: 100%;
@@ -369,5 +369,8 @@
     }
     .firstTextTitles{
         font-size: 4vw;
+    }
+    .firstTextHome{
+        padding: 40px 1%;
     }
 }
