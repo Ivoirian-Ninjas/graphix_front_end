@@ -1406,15 +1406,15 @@
   content: "\f423"; }
 
 .fa-empire:before {
-  content: "\f1d1"; }
+  content: "\f1d1"; }*/
 
-.fa-envelope:before {
-  content: "\f0e0"; } */
+/* .fa-envelope:before {
+  content: "\f0e0"; } 
 
 .fa-paper-plane:before:before {
-  content: "\f2b6"; }
+  content: "\f2b6"; } */
 
-/*.fa-envelope-open-text:before {
+ /* .fa-envelope-open-text:before {
   content: "\f658"; } */
 
 .fa-envelope-square:before {
@@ -2792,12 +2792,12 @@
   content: "\f3d8"; }
 
 .fa-pallet:before {
-  content: "\f482"; }
+  content: "\f482"; }*/
 
 .fa-paper-plane:before {
   content: "\f1d8"; }
 
-.fa-paperclip:before {
+/*.fa-paperclip:before {
   content: "\f0c6"; }
 
 .fa-parachute-box:before {
