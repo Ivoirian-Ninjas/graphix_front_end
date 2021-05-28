@@ -14,6 +14,7 @@ export default class contact extends Component {
 
 
     state = {
+        disabled: false,
         firstName: "",
         lastName: "",
         email: "",
@@ -37,6 +38,7 @@ export default class contact extends Component {
 
     resetForm = () => {
         this.setState({
+            disabled: false,
             firstName: "",
             lastName: "",
             email: "",
@@ -92,10 +94,10 @@ export default class contact extends Component {
 
             toast.error('Please make sure you fill out all the information', {
                 position: "top-center",
-                autoClose: 5000,
+                autoClose: 3000,
                 hideProgressBar: false,
                 closeOnClick: true,
-                pauseOnHover: true,
+                pauseOnHover: false,
                 draggable: true,
                 progress: undefined,
             });
@@ -109,7 +111,8 @@ export default class contact extends Component {
 
         }
       
-      
+        this.setState({disabled: false})
+
     }
 
     validate_form =() => !(this.state.firstName === "" || this.state.lastName === "" || this.state.email === "" || this.state.phone ==="" || this.state.budget.value  === "" || this.state.help === "")
@@ -156,6 +159,7 @@ export default class contact extends Component {
                 <ToastContainer
                     position="top-center"
                     autoClose={5000}
+                    limit={1}
                     hideProgressBar={false}
                     newestOnTop={false}
                     closeOnClick
@@ -264,7 +268,7 @@ export default class contact extends Component {
                         </div>
           
 
-                        <button className='SendContactForm'> 
+                        <button className='SendContactForm' onclick={() => this.setState({disabled: true})} disabled={this.state.disabled}> 
                            <i className='fa fa-paper-plane'></i> Send 
                         </button>
 
