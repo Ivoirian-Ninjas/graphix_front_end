@@ -5,20 +5,15 @@ import './framework/fontawesome-free-5.11.2-web/css/all.css'
 
 
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-
+import './App.css'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import Home from "./views/home"
 import About from "./views/about"
 import Contact from "./views/contact"
 import Service from "./views/service"
-import './fonts/Poppins/Poppins-Regular.ttf'
-import './fonts/Titillium_Web/TitilliumWeb-Regular.ttf'
 import './fonts/Robodron_Font/Robodron_Bold.ttf'
-import './fonts/Montserrat/Montserrat-Medium.ttf'
 import './fonts/Vindemia/Vindemia.ttf'
-import './fonts/Montserrat/Montserrat-SemiBold.ttf'
-import './fonts/Montserrat/Montserrat-Bold.ttf'
 import {
   BrowserRouter as Router,
   Switch,
