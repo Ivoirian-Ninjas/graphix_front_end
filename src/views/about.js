@@ -173,8 +173,9 @@ export default class About extends Component {
                 </a>
               </li>
               <li className="liSocial">
+    
                 <a
-                  href="mail_to:cloekouadjo@gmail.com"
+                  href="mailto:cloekouadjo@gmail.com"
                   target="_blank"
                   className="aSocial"
                 >
