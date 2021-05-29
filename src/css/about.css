@@ -52,14 +52,15 @@ body{
     display: block;
     color: rgb(245, 245, 245);
     width: 65%;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 20px;
 }
 .titleInsideTopAbout{
     font-size: 60px;
     color: white;
     font-weight: 500;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .divQualitiesListAbout{
     width: 100%;
@@ -106,7 +107,8 @@ body{
     margin-top:50vh;
     transition: 0.5s;
     margin-left: 2%;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     transform: translateY(0%);
     font-size: 1.3vw;
     text-transform: uppercase;
@@ -152,14 +154,16 @@ body{
     margin: 5px 0;
     font-weight: normal;
     font-size: 2.3vw;
-    font-family: 'Montserrat-semiBold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     /* text-transform: uppercase; */
 }
 .firstTextTitleAbout2{
     margin: 5px 0;
     font-weight: normal;
     font-size: 45px;
-    font-family: 'Montserrat-semiBold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     /* text-transform: uppercase; */
     color: rgb(255, 255, 255);
 }
@@ -188,7 +192,7 @@ body{
     width: 100%;
     font-weight: 500;
     font-size: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     margin: 3% 0;
     color: rgb(255, 255, 255);
@@ -242,7 +246,7 @@ body{
     object-fit: cover;
 }
 .boxContentInfo h3{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     color: rgb(29, 29, 29);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -253,7 +257,7 @@ body{
     line-height: 1.1em;
 }
 .boxContentInfo p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     color: rgb(29, 29, 29);
     text-transform: uppercase;
     font-weight: 700;

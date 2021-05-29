@@ -18,13 +18,14 @@
 .copyrightGraphix{
     font-weight: 600;
     font-size: 14px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     color: rgb(255, 254, 250);
     /* background:chartreuse; */
     width: 30%;
     justify-content: center;
     align-items: center;
+    font-weight: 400;
 }
 .divLogoFooter{
     display: flex;

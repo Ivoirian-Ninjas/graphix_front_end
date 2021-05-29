@@ -46,7 +46,7 @@
     font-size: 65px;
     color: white;
     font-weight: 700;
-    font-family: 'Robodron';
+    font-family: 'Robodron', sans-serif;
     letter-spacing: -1px;
 }
 .companySlogan{
@@ -91,14 +91,14 @@
     margin: 20px 0;
     font-weight: normal;
     font-size: 2vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 .firstTextContain{
     width: 100%;
     font-weight: 500;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     margin: 3% 0;
 }
@@ -126,7 +126,7 @@
     padding: 10vh 3%;
     font-weight: 500;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     flex-direction: column;
     /* background: rgb(46, 15, 4); */
 }
@@ -134,7 +134,7 @@
     width: 100%;
     font-weight: 700;
     font-size: 2vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 /* .divDots{
     height: 420px;
@@ -167,9 +167,9 @@
 .moreLinkHome{
     text-decoration: none;
     color: rgb(29, 29, 29);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     transition: 0.3s ease-in-out;
 }
 .moreAboutHome:hover{
@@ -200,17 +200,18 @@
 .serviceHomeTitle{
     width: 100%;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     margin: 7% 0;
     height: 35px;
-    font-weight: bolder;
+    font-weight: 600;
 }
 .serviceHomeText{
     width: 100%;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     margin: 15% 0 10% 0;
     text-align: left;
+    font-weight: 400;
 }
 .divServiceIcon{
     width: 100%;
@@ -244,7 +245,7 @@
     margin: 20px 0;
     font-weight: 600;
     font-size: 2vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .moreAboutHomes{
     width: 30%;
@@ -263,7 +264,7 @@
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.3vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     transition: 0.3s ease-in-out;
 }
 

@@ -51,8 +51,8 @@
     justify-content: left;
     align-items: center;
     font-size: 2vw;
-    font-weight: bold;
-    font-family: 'Montserrat-Bold';
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 1%;
 }
 .mailContact{
@@ -64,16 +64,17 @@
     font-weight: bolder;
     color: rgb(253, 253, 253);
     text-decoration: none;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .textContactUs{
     width: 100%;
     display: flex;
     font-size: 1.1vw;
-    font-weight: normal;
+    font-weight: 400;
     color: rgb(253, 253, 253);
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     margin-bottom: 5%;
 
@@ -85,7 +86,7 @@
     font-size: 3vw;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    font-family: Arial;
+    font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     margin-bottom: 3%;
 }
@@ -109,10 +110,10 @@
     width: 100%;
     display: flex;
     font-size: 1.1vw;
-    font-weight: normal;
+    font-weight: 400;
     color: rgb(24, 24, 24);
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     margin-bottom: 5%;
 }
@@ -142,8 +143,9 @@
     border-radius: 5px;
     margin-bottom: 2%;
     outline: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
+    font-weight: 400;
 }
 .areaContact{
     width: 98%;
@@ -154,8 +156,9 @@
     border-radius: 5px;
     margin-bottom: 2%;
     outline: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2vw;
+    font-weight: 400;
 }
 .SendContactForm{
     width: 50%;
@@ -166,7 +169,8 @@
     padding: 13px 10px;
     margin-top: 5%;
     font-size: 1.2vw;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .error{
     border: 1px solid rgb(255, 44, 72);
@@ -174,8 +178,9 @@
 .phoneContact{
     margin: 1% 0 1% 0;
     font-size: 15px;
-    font-family: 'Montserrat-SemiBold';
+    font-family: 'Montserrat', sans-serif;
     color: rgb(94, 94, 94);
+    font-weight: 600;
 }
 @media screen and (max-width: 1034px) {
     .contactForm{
