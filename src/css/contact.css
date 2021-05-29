@@ -52,7 +52,7 @@
     align-items: center;
     font-size: 2vw;
     font-weight: bold;
-    font-family: Montserrat-Bold;
+    font-family: 'Montserrat-Bold';
     margin-bottom: 1%;
 }
 .mailContact{
@@ -64,7 +64,7 @@
     font-weight: bolder;
     color: rgb(253, 253, 253);
     text-decoration: none;
-    font-family: Montserrat
+    font-family: 'Montserrat'
 }
 .textContactUs{
     width: 100%;
@@ -73,7 +73,7 @@
     font-weight: normal;
     color: rgb(253, 253, 253);
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     text-align: left;
     margin-bottom: 5%;
 
@@ -112,7 +112,7 @@
     font-weight: normal;
     color: rgb(24, 24, 24);
     text-decoration: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     text-align: left;
     margin-bottom: 5%;
 }
@@ -142,7 +142,7 @@
     border-radius: 5px;
     margin-bottom: 2%;
     outline: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 1vw;
 }
 .areaContact{
@@ -154,7 +154,7 @@
     border-radius: 5px;
     margin-bottom: 2%;
     outline: none;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 1.2vw;
 }
 .SendContactForm{
@@ -166,7 +166,7 @@
     padding: 13px 10px;
     margin-top: 5%;
     font-size: 1.2vw;
-    font-family: Montserrat-SemiBold;
+    font-family: 'Montserrat-SemiBold';
 }
 .error{
     border: 1px solid rgb(255, 44, 72);
@@ -174,7 +174,7 @@
 .phoneContact{
     margin: 1% 0 1% 0;
     font-size: 15px;
-    font-family: Montserrat-SemiBold;
+    font-family: 'Montserrat-SemiBold';
     color: rgb(94, 94, 94);
 }
 @media screen and (max-width: 1034px) {

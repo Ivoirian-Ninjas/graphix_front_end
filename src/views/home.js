@@ -33,7 +33,7 @@ export default function Home() {
 
            <div className='divFirstImgs'>
                 <div className='bigTitleHomes'>
-                    <p className='companyNameHome'>Graphix</p>
+                    <p className='companyNameHome'>GRAPHIX</p>
                     <p className='companySlogan'>Affordable Web Services</p>
                     <div className='divBtnHome'>
                         <button onClick={goToContact} className='btnInnoved'>Let's Get Started</button>
