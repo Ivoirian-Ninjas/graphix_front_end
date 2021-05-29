@@ -12,13 +12,13 @@ import Home from "./views/home"
 import About from "./views/about"
 import Contact from "./views/contact"
 import Service from "./views/service"
-import './fonts/Poppins/Poppins-Regular.ttf';
-import './fonts/Titillium_Web/TitilliumWeb-Regular.ttf';
-import './fonts/Robodron_Font/Robodron_Bold.ttf';
-import './fonts/Montserrat/Montserrat-Medium.ttf';
-import './fonts/Vindemia/Vindemia.ttf';
-import './fonts/Montserrat/Montserrat-SemiBold.ttf';
-import './fonts/Montserrat/Montserrat-Bold.ttf';
+import './fonts/Poppins/Poppins-Regular.ttf'
+import './fonts/Titillium_Web/TitilliumWeb-Regular.ttf'
+import './fonts/Robodron_Font/Robodron_Bold.ttf'
+import './fonts/Montserrat/Montserrat-Medium.ttf'
+import './fonts/Vindemia/Vindemia.ttf'
+import './fonts/Montserrat/Montserrat-SemiBold.ttf'
+import './fonts/Montserrat/Montserrat-Bold.ttf'
 import {
   BrowserRouter as Router,
   Switch,
