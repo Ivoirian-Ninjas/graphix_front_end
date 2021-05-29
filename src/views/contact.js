@@ -169,38 +169,38 @@ export default class contact extends Component {
                     pauseOnHover
                 />
                 <div className='contactForm'>
-                <div className='divEmailUs'>
+                <div className='divEmailUs' data-aos='fade-left' data-aos-delay="400">
                     <div>
-                        <span className='contactUs'>Contact us</span>
-                        <p className='textContactUs'>We will be thrilled to talk about your new best ideas!</p>
-                        <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact'>
-                            <img src={gmailIcon} alt='icon' className='gmailIcon' />
+                        <span className='contactUs' data-aos='fade-left' data-aos-delay='200'>Contact us</span>
+                        <p className='textContactUs' data-aos='fade-left' data-aos-delay='400'>We will be thrilled to talk about your new best ideas!</p>
+                        <a href="mailto:info@graphix-ck.com" target="blank" className='mailContact' data-aos='fade-left' data-aos-delay='500'>
+                            <img src={gmailIcon} alt='icon' className='gmailIcon' data-aos='fade-left' data-aos-delay='600' />
                             info@graphix-ck.com
                         </a>
                     </div>
                 </div>
                 <div className='divFormContact'>
                     <div>
-                    <p className='getInTouch'>
+                    <p className='getInTouch' data-aos='fade-left' data-aos-delay='700'>
                         Get in Touch
                     </p>
-                    <p className='titleContactText'>
+                    <p className='titleContactText' data-aos='fade-left' data-aos-delay='800'>
                         Please fill out the form below and let us know how we can best assit you.
                     </p>
                     <form onSubmit={this.handle_submit}>
                         <div className='userInfoContact'>
-                            <div className='divFirstInfo'>
+                            <div className='divFirstInfo' data-aos='fade-left' data-aos-delay='900'>
                                 <input name='firstName' placeholder='Frist Name' value={this.state.firstName}  onChange={this.handle_change} className={`${this.state.error_firstName && 'error' } inputContact`}/>
                             </div>
-                            <div className='divFirstInfo'>
+                            <div className='divFirstInfo' data-aos='fade-left' data-aos-delay='1000'>
                                 <input name='lastName' placeholder='Last Name' value={this.state.lastName} onChange={this.handle_change} className={`${this.state.error_lastName && 'error'} inputContact`}/>
                             </div>
-                            <div className='div2ndInfo'>
+                            <div className='div2ndInfo' data-aos='fade-left' data-aos-delay='1100'>
                                 <input type='email' placeholder='username@mail.com' name='email' value={this.state.email} onChange={this.handle_change} className={ `${this.state.error_email && 'error'}  inputContact`}/>
                             </div>
                         </div>
                         {/* Leave the budget at this position */}
-                        <div className='userInfoContact' >
+                        <div className='userInfoContact' data-aos='fade-left' data-aos-delay='1200'>
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
                                 className={`${this.state.error_budget && 'error'} basic-single telDevise`}
@@ -231,12 +231,13 @@ export default class contact extends Component {
                              placeholder='How can we help? *'
                              onChange={this.handle_change}
                              className={`${this.state.error_help && 'error'} areaContact`}
+                             data-aos='fade-left' data-aos-delay='1300'
                              >
                             </textarea>
                         </div>
                       
-                        <div className='userInfoContact'>
-                            <label className='phoneContact'>Phone:</label>
+                        <div className='userInfoContact' data-aos='fade-left' data-aos-delay='1500'>
+                            <label className='phoneContact' data-aos='fade-left' data-aos-delay='1400'>Phone:</label>
                             <PhoneInput
                                 name="phone"
                                 country={'us'}
@@ -268,7 +269,7 @@ export default class contact extends Component {
                         </div>
           
 
-                        <button className='SendContactForm' onclick={() => this.setState({disabled: true})} disabled={this.state.disabled}> 
+                        <button className='SendContactForm' onclick={() => this.setState({disabled: true})} disabled={this.state.disabled} data-aos='fade-left' data-aos-delay='1600'> 
                            <i className='fa fa-paper-plane'></i> Send 
                         </button>
 

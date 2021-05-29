@@ -33,8 +33,8 @@ export default function Home() {
 
            <div className='divFirstImgs'>
                 <div className='bigTitleHomes'>
-                    <p className='companyNameHome'>GRAPHIX</p>
-                    <p className='companySlogan'>Affordable Web Services</p>
+                    <p className='companyNameHome' data-aos="fade-left" data-aos-duration='1000'>GRAPHIX</p>
+                    <p className='companySlogan' data-aos="fade-left" data-aos-duration='1000' data-aos-delay='100'>Affordable Web Services</p>
                     <div className='divBtnHome'>
                         <button onClick={goToContact} className='btnInnoved'>Let's Get Started</button>
                     </div>
@@ -44,8 +44,8 @@ export default function Home() {
            </div>
 
             <div className='firstTextHome'>
-                <h1 className='firstTextTitle'> What you can expect from us.</h1>
-                <p className='firstTextContain'>
+                <h1 className='firstTextTitle' data-aos="fade-up"> What you can expect from us.</h1>
+                <p className='firstTextContain' data-aos="fade-up" data-aos-delay='200'>
                 At Graphix, we pride ourselves on being a customer-centric company; 
                 In fact, this core value pushes us to provide our services at an affordable price. 
                 Hence, the sole goal of Graphix is to help businesses get one step closer to success with a polished online presence.
@@ -57,7 +57,7 @@ export default function Home() {
 
                 <div className='divQuality'>
                     {/* First value */}
-                    <div className='divQualityImgs'>
+                    <div className='divQualityImgs' data-aos='fade-left'>
                         {/* <div className='divDots'>
                             <img src={dotsWhite} alt='dots' className='imgDots' />
                         </div> */}
@@ -66,7 +66,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p className='divQualityText'>
+                    <p className='divQualityText' data-aos='fade-left' data-aos-delay='300'>
                         <b className='divQualityNames'>Frugality</b> <br/><br/>
                          Graphix understands the power of accomplishing more with less. 
                         Knowing that there are no extra points for growing headcount or budget size,
@@ -75,14 +75,14 @@ export default function Home() {
                 </div>
                 <div className='divQuality'>
                     {/* Second value */}
-                    <p className='divQualityText'>
+                    <p className='divQualityText' data-aos='fade-right' data-aos-delay='300'>
                     <b className='divQualityNames'>Quality</b> <br/><br/>
                         On top of being frugal and transparent with our solutions, 
                         we also guarantee the quality of our services.
                         Because speed matters in business, we always develop and deliver our solutions on time.
 
                     </p>
-                    <div className='divQualityImgs'>
+                    <div className='divQualityImgs' data-aos='fade-right'>
                         {/* <div className='divDots'>
                             <img src={dotsWhite} alt='dots' className='imgDots' />
                         </div> */}
@@ -93,7 +93,7 @@ export default function Home() {
                 </div>
                 <div className='divQuality'>
                     {/* Third value */}
-                    <div className='divQualityImgs'>
+                    <div className='divQualityImgs' data-aos='fade-left'>
                         {/* <div className='divDots'>
                             <img src={dotsWhite} alt='dots' className='imgDots' />
                         </div> */}
@@ -101,7 +101,7 @@ export default function Home() {
                             <img src={imageQualityThree} alt='dots' className='imgQuality' />
                         </div>
                     </div>
-                    <p className='divQualityText'>
+                    <p className='divQualityText' data-aos='fade-left' data-aos-delay='300'>
                     <b className='divQualityNames'>Think Big</b> <br/><br/>
                         Thinking small is a self-fulfilling prophecy.
                         At Graphix, we value businesses with big dreams. 
@@ -115,37 +115,37 @@ export default function Home() {
             </div>
         
            <div className='firstTextHome'>
-               <h1 className='firstTextTitle'>We are a versatile company.</h1>
-               <p className='firstTextContain'>
+               <h1 className='firstTextTitle' data-aos='fade-up'>We are a versatile company.</h1>
+               <p className='firstTextContain' data-aos='fade-up'>
                     Graphix provides web and mobile applications for all business sizes. 
                     Because we understand the benefits of frugality, 
                     we focus our efforts on finding solutions that are affordable, secure, and efficient.
                </p>
                <div className='divServicesHome'>
-                   <a className='divServiceHome' href="/service#fullstack-development">
-                       <div className='divServiceIcon'>
+                   <a className='divServiceHome' href="/service#fullstack-development" data-aos='fade-left'>
+                       <div className='divServiceIcon' data-aos='fade-left' data-aos-delay='100'>
                             <img src={serviceImgsOne} alt="ImageService" className='serviceIcon' />
                        </div>
-                        <h3 className='serviceHomeTitle'>Fullstack Developpment</h3>
-                        <p className='serviceHomeText'>
+                        <h3 className='serviceHomeTitle' data-aos='fade-left' data-aos-delay='200'>Fullstack Developpment</h3>
+                        <p className='serviceHomeText' data-aos='fade-left' data-aos-delay='300'>
                             Our developers are experts in many development languages and we work tirelessly to stay up to date...
                         </p>
                    </a>
-                   <a className='divServiceHome' href="/service#mobile-development">
-                        <div className='divServiceIcon'>
+                   <a className='divServiceHome' href="/service#mobile-development" data-aos='fade-left' data-aos-delay='400'>
+                        <div className='divServiceIcon' data-aos='fade-left' data-aos-delay='500'>
                             <img src={serviceImgsTwo} alt='ServiceIcon' className='serviceIconAlt' />
                        </div>
-                        <h3 className='serviceHomeTitle'>Mobile Developpment</h3>
-                        <p className='serviceHomeText'>
+                        <h3 className='serviceHomeTitle' data-aos='fade-left' data-aos-delay='600'>Mobile Developpment</h3>
+                        <p className='serviceHomeText' data-aos='fade-left' data-aos-delay='700'>
                             Most websites in today’s world need a mobile application to go along with them. Our team specializes...
                         </p>
                    </a>
-                   <a className='divServiceHome' href="/service#visual-design">
-                        <div className='divServiceIcon'>
+                   <a className='divServiceHome' href="/service#visual-design" data-aos='fade-left' data-aos-delay='800'>
+                        <div className='divServiceIcon' data-aos='fade-left' data-aos-delay='900'>
                             <img src={serviceImgsThree} alt='ServieIcon1' className='serviceIconDesign' />
                        </div>
-                        <h3 className='serviceHomeTitle'>Visual Design</h3>
-                        <p className='serviceHomeText'>
+                        <h3 className='serviceHomeTitle' data-aos='fade-left' data-aos-delay='1000'>Visual Design</h3>
+                        <p className='serviceHomeText' data-aos='fade-left' data-aos-delay='1100'>
                             Many sites suffer from poor performance. We work with you to improve key areas of your web or mobile...
                         </p>
                    </a>
