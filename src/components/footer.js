@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 export default function Footer() {
     return (
         <div className='divFooter'>
-            <h1 className='copyrightGraphix'> Copyright 2021 Graphix LLC</h1>
+            <h1 className='copyrightGraphix'>Graphix 2021</h1>
             <div className='divLogoFooter'>
                 <a href="/"><img src={logoFooter} alt='logo footer' className='imgFooter' /></a>
             </div>
