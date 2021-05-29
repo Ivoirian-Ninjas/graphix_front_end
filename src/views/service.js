@@ -37,21 +37,20 @@ export default function Service() {
                     {/* Change the text below*/}
                     <b className='titleInsideTopServices'>Our Services</b> <br />
                     {/* Chqnge the text below*/}
-                    Our team builds web and mobile applications for many industries. <br/>
-                    We work tirelessly to stay up to date with the latest technologies <br/>
-                    and industry standards. Hence, our team focuses on frugality, <br/>
+                    Our team builds web and mobile applications for many industries. 
+                    We work tirelessly to stay up to date with the latest technologies 
+                    and industry standards. Hence, our team focuses on frugality, 
                     which allows us to develop solutions at an affordable price.
                 </p>       
             </div>
             <div className='divServicesList'>
-              <h1 className='titleElementServices'>How we can help your business grow</h1>
+              <h1 className='titleElementServices'>How we can help your business grow.</h1>
               <div className='divServicesContain' id="fullstack-development">
                   <div className='divServicesText'>
                     <h3 className='serviceListTitle'>Fullstack Development</h3>
                     <p className='serviceListInfo'>
                         Our developers are experts in many development languages and we work tirelessly to stay 
-                        up to date <br/>
-                         with the latest industry standards and practices.
+                        up to date with the latest industry standards and practices.
                     </p>
                   </div>
                   <div className='divServicesImage'>
@@ -66,8 +65,7 @@ export default function Service() {
                         <h3 className='serviceListTitle'>Mobile Development</h3>
                         <p className='serviceListInfo'>
                             Most websites in today’s world need a mobile application to go along with them. Our 
-                            team <br/>
-                            specializes in creating both native phone applications and responsive websites.
+                            team specializes in creating both native phone applications and responsive websites.
                         </p>
                     </div>
               </div>
@@ -75,7 +73,7 @@ export default function Service() {
                   <div className='divServicesText'>
                     <h3 className='serviceListTitle'>App Optimization</h3>
                     <p className='serviceListInfo'>
-                        Many sites suffer from poor performance. <br/>
+                        Many sites suffer from poor performance.
                         We work with you to improve key areas of your 
                         web or mobile application to increase performance, stability, and reliability.
                     </p>
@@ -91,7 +89,7 @@ export default function Service() {
                     <div className='divServicesText' id="visual-design">
                         <h3 className='serviceListTitle'>Visual Design</h3>
                         <p className='serviceListInfo'>
-                            Most functional websites could use a facelift. <br/>
+                            Most functional websites could use a facelift. 
                             Our design team will work with you to bring your site to the current standards while 
                             maximizing profits and giving your users the best experience possible.
                         </p>
@@ -172,7 +170,7 @@ export default function Service() {
             <div className='firstTextAbout'>
                 <h1 className='titleElementServices'>Still unsure or have more questions?</h1>
                 <p className='firstTextContain'>
-                    Reach out to us and we can answer your questions personally. Also, we understand if you want to see our previous work. <br/>
+                    Reach out to us and we can answer your questions personally. Also, we understand if you want to see our previous work. 
                     Our team will be thrilled to showcase its knowledge.
                 </p>
                 <div className='moreAboutHomes'>

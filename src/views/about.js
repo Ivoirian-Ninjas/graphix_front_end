@@ -45,9 +45,9 @@ export default class About extends Component {
           <p className="textInsideTop">
             {/* Change the text below*/}
             <b className="titleInsideTopAbout">Who We Are</b> <br />
-            Frugality, Quality, and Thinking Big are our core values. <br/>
-            Hence, those values represent the foundation of Graphix. <br/>
-            Following these values, allows us to start with the customer <br/>and work backward. 
+            Frugality, Quality, and Thinking Big are our core values. 
+            Hence, those values represent the foundation of Graphix. 
+            Following these values, allows us to start with the customer and work backward. 
           </p>
         </div>
         <div className="divQualitiesListAbout">
@@ -118,11 +118,7 @@ export default class About extends Component {
               </div>
             </div>
             <ul className="ulSocial">
-              {/* <li className='liSocial'>
-                            <a href='https://www.facebook.com/michel.konan' target="_blank" className='aSocial'>
-                                <i className='fab fa-linkedin'></i>
-                            </a>
-                        </li> */}
+            
               <li className="liSocial">
                 <a
                   href="https://www.instagram.com/im_qirxk/"
