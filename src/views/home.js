@@ -126,7 +126,7 @@ export default function Home() {
                        <div className='divServiceIcon'>
                             <img src={serviceImgsOne} alt="ImageService" className='serviceIcon' />
                        </div>
-                        <h3 className='serviceHomeTitle'>Fullstack Developpment</h3>
+                        <h3 className='serviceHomeTitle'>Web Developpment</h3>
                         <p className='serviceHomeText'>
                             Our developers are experts in many development languages and we work tirelessly to stay up to date...
                         </p>

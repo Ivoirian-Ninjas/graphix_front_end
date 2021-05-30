@@ -47,7 +47,7 @@ export default function Service() {
               <h1 className='titleElementServices'>How we can help your business grow.</h1>
               <div className='divServicesContain' id="fullstack-development">
                   <div className='divServicesText'>
-                    <h3 className='serviceListTitle'>Fullstack Development</h3>
+                    <h3 className='serviceListTitle'>Web Development</h3>
                     <p className='serviceListInfo'>
                         Our developers are experts in many development languages and we work tirelessly to stay 
                         up to date with the latest industry standards and practices.
