@@ -14,6 +14,9 @@ import Contact from "./views/contact"
 import Service from "./views/service"
 import './fonts/Robodron_Font/Robodron_Bold.ttf'
 import './fonts/Vindemia/Vindemia.ttf'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +24,9 @@ import {
 } from "react-router-dom";
 require('dotenv').config()
 
-
+AOS.init({
+  once: true,
+})
 function App() {
   return (
     <Router>

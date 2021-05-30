@@ -42,7 +42,7 @@ export default class About extends Component {
         <div className="divImgTopAbout">
           <img src={imageTop} alt="Images" className="imageTop" />
           <div className="coverTopAbout"></div>
-          <p className="textInsideTop">
+          <p className="textInsideTop" data-aos="fade-left" data-aos-duration='1000'>
             {/* Change the text below*/}
             <b className="titleInsideTopAbout">Who We Are</b> <br />
             Frugality, Quality, and Thinking Big are our core values. 
@@ -51,15 +51,15 @@ export default class About extends Component {
           </p>
         </div>
         <div className="divQualitiesListAbout">
-          <div className="div1stQualityAbout">
-            <div className="divImageQualityAbout">
+          <div className="div1stQualityAbout" data-aos="fade-left">
+            <div className="divImageQualityAbout" >
               <img src={Img1stQ} className="imageQualitiesAbout" />
             </div>
             <div className="coverImgAbout"></div>
             <h2 className="divLegendQualityAbout">Frugality</h2>
           </div>
 
-          <div className="div1stQualityAbout">
+          <div className="div1stQualityAbout" data-aos="fade-left" data-aos-delay="200">
             <div className="divImageQualityAbout">
               <img src={Img2ndQ} className="imageQualitiesAbout" />
             </div>
@@ -67,7 +67,7 @@ export default class About extends Component {
             <h2 className="divLegendQualityAbout">Quality</h2>
           </div>
 
-          <div className="div1stQualityAbout">
+          <div className="div1stQualityAbout" data-aos="fade-left" data-aos-delay="400">
             <div className="divImageQualityAbout">
               <img src={Img3rdQ} className="imageQualitiesAbout" />
             </div>
@@ -78,7 +78,7 @@ export default class About extends Component {
 
         <div className="firstTextAbout">
           {/* A brief intro text to our values */}
-          <p className="firstTextContain">
+          <p className="firstTextContain" data-aos="fade-up" data-aos-duration='1000'>
             Frugality, Quality, and Thinking Big are our core values. Hence,
             those values represent the foundation of Graphix. Following these
             values, allows us to start with the customer and work backward.
@@ -88,9 +88,9 @@ export default class About extends Component {
         <div className="firstTextAbout2">
           <div className="coverTopAbout2"></div>
           <div className="divContainWhy">
-            <h1 className="firstTextTitleAbout2">Why we do exist</h1>
+            <h1 className="firstTextTitleAbout2" data-aos="fade-up">Why we do exist</h1>
 
-            <p className="firstTextContain2">
+            <p className="firstTextContain2" data-aos="fade-up" data-aos-delay="200">
               With the recent pandemic that hit the world, more and more
               businesses started to realize that having an online presence is
               unavoidable. However, building a web or a mobile application is
@@ -104,10 +104,10 @@ export default class About extends Component {
         </div>
 
         <div className="firstTextAbout">
-          <h1 className="firstTextTitleAbout">Meet the team</h1>
+          <h1 className="firstTextTitleAbout" data-aos="fade-up">Meet the team</h1>
         </div>
         <div className="divContainerMember">
-          <div className="cardMember">
+          <div className="cardMember" data-aos="fade-left">
             <div className="contentMember">
               <div className="boxImageMember">
                 <img src={Jean} alt="member one" className="imgMember" />
@@ -139,7 +139,7 @@ export default class About extends Component {
               </li>
             </ul>
           </div>
-          <div className="cardMember">
+          <div className="cardMember" data-aos="fade-left" data-aos-delay="200">
             <div className="contentMember">
               <div className="boxImageMember">
                 <img src={Loic} alt="member one" className="imgMember" />
@@ -183,8 +183,8 @@ export default class About extends Component {
         </div>
 
         <div className="firstTextAbout">
-          <h1 className="firstTextTitleAbout">Based in USA and Ivory Coast</h1>
-          <p className="firstTextContain">
+          <h1 className="firstTextTitleAbout" data-aos="fade-up">Based in USA and Ivory Coast</h1>
+          <p className="firstTextContain" data-aos="fade-up" data-aos-delay="200">
           Graphix is based in the USA and Ivory Coast. 
           You guessed it, we also speak French. 
           In those two countries, our team allows us to work on projects and deliver our solutions with time efficiency.
@@ -199,10 +199,10 @@ export default class About extends Component {
         </div>
 
         <div className="firstTextAbout">
-          <h1 className="firstTextTitleAbout">
+          <h1 className="firstTextTitleAbout" data-aos="fade-up">
             Still unsure or have more questions?
           </h1>
-          <p className="firstTextContain">
+          <p className="firstTextContain" data-aos="fade-up" data-aos-delay="200">
             Reach out to us and we can answer your questions personally. Also,
             we understand if you want to see our previous work. Our team will be
             thrilled to showcase its knowledge.
