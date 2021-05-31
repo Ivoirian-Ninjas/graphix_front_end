@@ -48,11 +48,13 @@
     font-weight: 700;
     font-family: 'Robodron', sans-serif;
     letter-spacing: -1px;
+    overflow: hidden;
 }
 .companySlogan{
     font-size: 35px;
     color: white;
     font-weight: 500;
+    overflow: hidden;
 }
 .divBtnHome{
     /* padding: 10px 20px;
