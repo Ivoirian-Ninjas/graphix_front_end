@@ -47,7 +47,7 @@ export default function Service() {
               <h1 className='titleElementServices' data-aos="fade-up">How we can help your business grow.</h1>
               <div className='divServicesContain' id="fullstack-development">
                   <div className='divServicesText'>
-                    <h3 className='serviceListTitle' data-aos='fade-right' data-aos-delay='300'>Fullstack Development</h3>
+                    <h3 className='serviceListTitle' data-aos='fade-right' data-aos-delay='300'>Web Development</h3>
                     <p className='serviceListInfo' data-aos='fade-right' data-aos-delay='400'>
                         Our developers are experts in many development languages and we work tirelessly to stay 
                         up to date with the latest industry standards and practices.

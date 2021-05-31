@@ -126,7 +126,7 @@ export default function Home() {
                        <div className='divServiceIcon' data-aos='fade-left' data-aos-delay='100'>
                             <img src={serviceImgsOne} alt="ImageService" className='serviceIcon' />
                        </div>
-                        <h3 className='serviceHomeTitle' data-aos='fade-left' data-aos-delay='200'>Fullstack Developpment</h3>
+                        <h3 className='serviceHomeTitle' data-aos='fade-left' data-aos-delay='200'>Web Developpment</h3>
                         <p className='serviceHomeText' data-aos='fade-left' data-aos-delay='300'>
                             Our developers are experts in many development languages and we work tirelessly to stay up to date...
                         </p>
