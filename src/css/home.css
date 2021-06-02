@@ -1,142 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100vw;
-    /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  /* overflow-x: hidden; */
 }
-.homeDiv{
-    margin: 7vh 0;
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100vw;
+.homeDiv {
+  margin: 7vh 0;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
-.divFirstImgs{
-    width: 100%;
-    margin: 0;
-    display: flex;
-    height: 600px;
-    overflow-y: hidden;
+.divFirstImgs {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  height: 600px;
+  overflow-y: hidden;
 }
-.ImgHome{
-    position:relative;
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
+.ImgHome {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
 }
-.bigTitleHomes{
-    position:absolute;
-    z-index: 4;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 15%;
-    margin-left: 7%;
-    max-width: 100vw;
-    overflow-y: hidden;
-
+.bigTitleHomes {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 15%;
+  margin-left: 7%;
+  max-width: 100vw;
+  overflow: hidden;
 }
-.blackCover{
-    position:absolute;
-    z-index: 2;
-    width: 100%;
-    height: 600px;
-    background: rgba(0, 0, 0, 0.377);
+.blackCover {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.377);
 }
-.companyNameHome{
-    font-size: 65px;
-    color: white;
-    font-weight: 700;
-    font-family: 'Robodron', sans-serif;
-    letter-spacing: -1px;
-    overflow: hidden;
+.companyNameHome {
+  font-size: 65px;
+  color: white;
+  font-weight: 700;
+  font-family: "Robodron", sans-serif;
+  letter-spacing: -1px;
+  overflow: hidden;
 }
-.companySlogan{
-    font-size: 35px;
-    color: white;
-    font-weight: 500;
-    overflow: hidden;
+.companySlogan {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+  overflow: hidden;
 }
-.divBtnHome{
-    /* padding: 10px 20px;
+.divBtnHome {
+  /* padding: 10px 20px;
     background: rgb(43, 42, 42);
     border-radius: 5px; */
-    width: 50%;
-    margin: 5% 0;
-    display: flex;
-    align-items: center;
-    justify-content: center
+  width: 50%;
+  margin: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btnInnoved{
-    width: 95%;
-    padding: 15px 10px;
-    background: rgb(255, 17, 88);
-    color: rgb(255, 255, 255);
-    transition: 0.3s ease-in;
-    border: none;
-    font-size: 17px;
+.btnInnoved {
+  width: 95%;
+  padding: 15px 10px;
+  background: rgb(255, 17, 88);
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease-in;
+  border: none;
+  font-size: 17px;
 }
-.btnInnoved:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(255, 17, 88);
-    transition: 0.3s ease-in;
-    /* border: 1px solid rgb(255, 17, 88); */
+.btnInnoved:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 17, 88);
+  transition: 0.3s ease-in;
+  /* border: 1px solid rgb(255, 17, 88); */
 }
-.firstTextHome{
-    width: 100%;
-    padding: 40px 10%;
-    margin: 0;
-    display: block;
-    align-items: center;
-    text-align: center;
+.firstTextHome {
+  width: 100%;
+  padding: 40px 10%;
+  margin: 0;
+  display: block;
+  align-items: center;
+  text-align: center;
 }
-.firstTextTitle{
-    margin: 20px 0;
-    font-weight: normal;
-    font-size: 2vw;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.firstTextTitle {
+  margin: 20px 0;
+  font-weight: normal;
+  font-size: 2vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
-.firstTextContain{
-    width: 100%;
-    font-weight: 500;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    margin: 3% 0;
+.firstTextContain {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin: 3% 0;
 }
-.ourQualities{
-    width: 100%;
-    overflow-x: hidden;
-    padding: 2% 10%;
-    display: block;
+.ourQualities {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 2% 10%;
+  display: block;
 }
-.divQuality{
-    width: 100%;
-    display: flex;
-    margin: 5% 0 6% 0;
-    justify-content: center;
-    flex-wrap: wrap;
+.divQuality {
+  width: 100%;
+  display: flex;
+  margin: 5% 0 6% 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.divQualityImgs{
-    width: 40vw;
-    height: 50vh;
-    /* background: coral; */
-    flex-direction: column;
+.divQualityImgs {
+  width: 40vw;
+  height: 50vh;
+  /* background: coral; */
+  flex-direction: column;
 }
-.divQualityText{
-    width: 40vw;
-    padding: 10vh 3%;
-    font-weight: 500;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    flex-direction: column;
-    /* background: rgb(46, 15, 4); */
+.divQualityText {
+  width: 40vw;
+  padding: 10vh 3%;
+  font-weight: 500;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  /* background: rgb(46, 15, 4); */
 }
-.divQualityNames{
-    width: 100%;
-    font-weight: 700;
-    font-size: 2vw;
-    font-family: 'Montserrat', sans-serif;
+.divQualityNames {
+  width: 100%;
+  font-weight: 700;
+  font-size: 2vw;
+  font-family: "Montserrat", sans-serif;
 }
 /* .divDots{
     height: 420px;
@@ -145,235 +144,233 @@
     overflow-y: hidden;
 
 } */
-.divImgsQualities{
-    width: 100%;
-    height: 100%;
-    display: flex;
+.divImgsQualities {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-.imgQuality{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.imgQuality {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.moreAboutHome{
-    width: 30%;
-    margin: 2% auto;
-    border: 2px solid rgb(255, 31, 106);
-    background: white;
-    padding: 2vh 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease-in-out;
+.moreAboutHome {
+  width: 30%;
+  margin: 2% auto;
+  border: 2px solid rgb(255, 31, 106);
+  background: white;
+  padding: 2vh 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
 }
-.moreLinkHome{
-    text-decoration: none;
-    color: rgb(29, 29, 29);
-    font-weight: 400;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.3s ease-in-out;
+.moreLinkHome {
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  font-weight: 400;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease-in-out;
 }
-.moreAboutHome:hover{
-    background: rgb(255, 31, 106);
-    transition: 0.3s ease-in-out;
+.moreAboutHome:hover {
+  background: rgb(255, 31, 106);
+  transition: 0.3s ease-in-out;
 }
-.moreAboutHome:hover .moreLinkHome{
-    color: rgb(253, 253, 253);
-    transition: 0.3s ease-in-out;
+.moreAboutHome:hover .moreLinkHome {
+  color: rgb(253, 253, 253);
+  transition: 0.3s ease-in-out;
 }
-.divServicesHome{
-    width: 100%;
-    /* background: rgb(255, 17, 88); */
-    display: flex;
-    margin: 5% 0;
-    justify-content: center;
-    flex-wrap: wrap;
+.divServicesHome {
+  width: 100%;
+  /* background: rgb(255, 17, 88); */
+  display: flex;
+  margin: 5% 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.divServiceHome{
-    border: none;
-    margin: 2%;
-    padding: 2% 3%;
-    width: 23vw;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background: rgb(0, 82, 175);
+.divServiceHome {
+  border: none;
+  margin: 2%;
+  padding: 2% 3%;
+  width: 23vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 82, 175);
 }
-.serviceHomeTitle{
-    width: 100%;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    margin: 7% 0;
-    height: 35px;
-    font-weight: 600;
+.serviceHomeTitle {
+  width: 100%;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  margin: 7% 0;
+  height: 35px;
+  font-weight: 600;
 }
-.serviceHomeText{
-    width: 100%;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    margin: 15% 0 10% 0;
-    text-align: left;
-    font-weight: 400;
+.serviceHomeText {
+  width: 100%;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  margin: 15% 0 10% 0;
+  text-align: left;
+  font-weight: 400;
 }
-.divServiceIcon{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
+.divServiceIcon {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
 }
-.serviceIcon{
-    width: 140px;
-    height: 140px;
+.serviceIcon {
+  width: 140px;
+  height: 140px;
 }
-.serviceIconAlt{
-    width: 140px;
-    height: 110px;
+.serviceIconAlt {
+  width: 140px;
+  height: 110px;
 }
-.serviceIconDesign{
-    width: 140px;
-    height: 130px;
+.serviceIconDesign {
+  width: 140px;
+  height: 130px;
 }
-.firstTextHomes{
-    width: 100%;
-    padding: 5px 10%;
-    margin: 0;
-    display: block;
-    align-items: center;
-    text-align: center;
+.firstTextHomes {
+  width: 100%;
+  padding: 5px 10%;
+  margin: 0;
+  display: block;
+  align-items: center;
+  text-align: center;
 }
-.firstTextTitles{
-    margin: 20px 0;
-    font-weight: 600;
-    font-size: 2vw;
-    font-family: 'Montserrat', sans-serif;
+.firstTextTitles {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 2vw;
+  font-family: "Montserrat", sans-serif;
 }
-.moreAboutHomes{
-    width: 30%;
-    margin: 2% auto;
-    border: none;
-    background: rgb(255, 31, 106);
-    padding: 2vh 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+.moreAboutHomes {
+  width: 30%;
+  margin: 2% auto;
+  border: none;
+  background: rgb(255, 31, 106);
+  padding: 2vh 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
-.moreLinkHomes{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    font-size: 1.3vw;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.3s ease-in-out;
+.moreLinkHomes {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1034px) {
-    .companyNameHome{
-        font-size: 30px;
-        letter-spacing: -1px;
-    }
-    .companySlogan{
-        font-size: 20px;
-    }
-    .divFirstImgs{
-        width: 100%;
-        height: 100vh;
-    }
-    .homeDiv{
-        margin: 0 0;
-    }
-    .bigTitleHomes{
-        margin-bottom: 15%; 
-    }
-    .ImgHome{
-        height: 100vh;
-        object-fit: cover;
-    }
-    .blackCover{
-        height: 100vh;
-    }
-    .divBtnHome{
-        width: 90%;
-    }
-    .firstTextContain{
-
-        font-size: 3.5vw;
-    }
-    .ourQualities{
-        padding: 2% 3%;
-    }
-    .divQuality{
-        width: 100%;
-        display: flex;
-        margin: 5% 0 6% 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        /* border: 1px solid rgb(41, 41, 41); */
-        height: 65vh;
-    }
-    .divQualityImgs{
-        width: 100%;
-        height: 300px;
-        /* background: coral; */
-        flex-direction: column;
-        padding: 2% 3%;
-        margin-top: 18vh;
-        position: absolute;
-        left: 0;
-    }
-    .divImgsQualities{
-        overflow: hidden;
-    }
-    .imgQuality{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-    .divQualityText{
-        width: 100%;
-        font-size: 3vw;
-        position: absolute;
-        right: 0;
-        border-top: 1px solid rgb(34, 34, 34);
-        padding: 3vh 3%;
-    }
-    .moreAboutHome{
-        width: 80%;
-        padding: 2vh 10px;
-
-    }
-    .moreAboutHomes{
-        width: 80%;
-    }
-    .firstTextTitle{
-        font-size: 4vw;
-    }
-    .divQualityNames{
-        font-size: 4vw;
-    }
-    .moreLinkHome{
-        font-size: 3vw;
-    }
-    .moreLinkHomes{
-        font-size: 3vw;
-    }
-    .divServiceHome{
-        width: 100vw;
-    }
-    .serviceHomeTitle{
-        font-size: 4vw;
-    }
-    .serviceHomeText{
-        font-size: 3vw;
-        margin: 5% 0 10% 0;
-    }
-    .firstTextTitles{
-        font-size: 4vw;
-    }
-    .firstTextHome{
-        padding: 40px 1%;
-    }
+  .companyNameHome {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .companySlogan {
+    font-size: 20px;
+  }
+  .divFirstImgs {
+    width: 100%;
+    height: 100vh;
+  }
+  .homeDiv {
+    margin: 0 0;
+  }
+  .bigTitleHomes {
+    margin-bottom: 15%;
+  }
+  .ImgHome {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .blackCover {
+    height: 100vh;
+  }
+  .divBtnHome {
+    width: 90%;
+  }
+  .firstTextContain {
+    font-size: 3.5vw;
+  }
+  .ourQualities {
+    padding: 2% 3%;
+  }
+  .divQuality {
+    width: 100%;
+    display: flex;
+    margin: 5% 0 6% 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid rgb(41, 41, 41); */
+    height: 65vh;
+  }
+  .divQualityImgs {
+    width: 100%;
+    height: 300px;
+    /* background: coral; */
+    flex-direction: column;
+    padding: 2% 3%;
+    margin-top: 18vh;
+    position: absolute;
+    left: 0;
+  }
+  .divImgsQualities {
+    overflow: hidden;
+  }
+  .imgQuality {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .divQualityText {
+    width: 100%;
+    font-size: 3vw;
+    position: absolute;
+    right: 0;
+    border-top: 1px solid rgb(34, 34, 34);
+    padding: 3vh 3%;
+  }
+  .moreAboutHome {
+    width: 80%;
+    padding: 2vh 10px;
+  }
+  .moreAboutHomes {
+    width: 80%;
+  }
+  .firstTextTitle {
+    font-size: 4vw;
+  }
+  .divQualityNames {
+    font-size: 4vw;
+  }
+  .moreLinkHome {
+    font-size: 3vw;
+  }
+  .moreLinkHomes {
+    font-size: 3vw;
+  }
+  .divServiceHome {
+    width: 100vw;
+  }
+  .serviceHomeTitle {
+    font-size: 4vw;
+  }
+  .serviceHomeText {
+    font-size: 3vw;
+    margin: 5% 0 10% 0;
+  }
+  .firstTextTitles {
+    font-size: 4vw;
+  }
+  .firstTextHome {
+    padding: 40px 1%;
+  }
 }
