@@ -88,7 +88,15 @@ export default class contact extends Component {
                 });
                 this.resetForm()
             }, (error) => {
-                console.log(error.text);
+                toast.error('We were enable to proceed. Please try again', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
             });
         }else{
 
@@ -145,7 +153,8 @@ export default class contact extends Component {
           background :'rgb(245, 245, 245)',
           margin:'2% 0',
           fontSize: '14px'
-        })
+        }),
+        menuPortal: base => ({ ...base, zIndex: 9999 })
     }
         return (
             <div className='divContact'>
@@ -203,6 +212,7 @@ export default class contact extends Component {
                         <div className='userInfoContact' data-aos='fade-left' data-aos-delay='1200'>
                             {/* Go to: https://react-select.com/home#custom-styles in order to add some styling*/}
                             <Select 
+                                menuPortalTarget={document.body} 
                                 className={`${this.state.error_budget && 'error'} basic-single telDevise`}
                                 options={this.options} 
                                 onChange={this.handle_select} 
